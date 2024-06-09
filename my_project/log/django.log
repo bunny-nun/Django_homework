@@ -1,0 +1,36 @@
+INFO 2024-06-04 00:07:10,174 autoreload 16828 22892 Watching for file changes with StatReloader
+INFO 2024-06-04 00:08:37,656 autoreload 13176 24880 Watching for file changes with StatReloader
+WARNING 2024-06-04 00:08:40,076 log 13176 27192 Not Found: /
+WARNING 2024-06-04 00:08:40,076 basehttp 13176 27192 "GET / HTTP/1.1" 404 2397
+INFO 2024-06-04 00:11:01,992 autoreload 13176 24880 D:\STUDY\homework_01\my_project\my_app\urls.py changed, reloading.
+INFO 2024-06-04 00:11:02,468 autoreload 5660 13048 Watching for file changes with StatReloader
+INFO 2024-06-04 00:11:04,522 basehttp 5660 10456 "GET / HTTP/1.1" 200 2385
+INFO 2024-06-04 00:12:14,473 autoreload 5660 13048 D:\STUDY\homework_01\my_project\my_app\views.py changed, reloading.
+INFO 2024-06-04 00:12:14,994 autoreload 28280 18964 Watching for file changes with StatReloader
+INFO 2024-06-04 00:12:54,957 basehttp 28280 26236 "GET / HTTP/1.1" 200 2427
+INFO 2024-06-04 00:12:55,889 autoreload 28280 18964 D:\STUDY\homework_01\my_project\my_app\views.py changed, reloading.
+INFO 2024-06-04 00:12:56,361 autoreload 8464 3792 Watching for file changes with StatReloader
+INFO 2024-06-04 00:13:26,753 basehttp 8464 12344 "GET /about HTTP/1.1" 301 0
+INFO 2024-06-04 00:13:26,756 basehttp 8464 12628 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:29,078 basehttp 8464 12628 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:13:31,242 basehttp 8464 12628 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:32,629 basehttp 8464 12628 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:13:34,284 basehttp 8464 12628 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:35,838 basehttp 8464 18996 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:13:37,516 basehttp 8464 18996 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:38,810 basehttp 8464 18996 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:13:40,361 basehttp 8464 18996 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:41,429 basehttp 8464 18996 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:13:42,456 basehttp 8464 18996 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:43,429 basehttp 8464 18996 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:13:44,448 basehttp 8464 18996 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:45,428 basehttp 8464 23452 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:13:46,762 basehttp 8464 23452 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:13:48,101 basehttp 8464 23452 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:16:22,928 autoreload 8464 3792 D:\STUDY\homework_01\my_project\my_app\views.py changed, reloading.
+INFO 2024-06-04 00:16:23,414 autoreload 12960 12160 Watching for file changes with StatReloader
+INFO 2024-06-04 00:16:24,849 basehttp 12960 26032 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:16:26,657 basehttp 12960 26032 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:16:27,576 basehttp 12960 26032 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-04 00:16:28,778 basehttp 12960 26032 "GET /index/ HTTP/1.1" 200 2454
+INFO 2024-06-04 00:16:29,630 basehttp 12960 26032 "GET /about/ HTTP/1.1" 200 1333
