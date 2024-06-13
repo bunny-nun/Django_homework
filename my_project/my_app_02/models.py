@@ -1,10 +1,11 @@
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 
 
 class Customer(models.Model):
     customer_name = models.CharField(max_length=128)
     email = models.EmailField(unique=True)
-    phone_number = models.CharField(max_length=128, unique=True)
+    phone_number = PhoneNumberField(unique=True)
     address = models.TextField()
     registration_date = models.DateField(auto_now_add=True)
 
@@ -29,11 +30,17 @@ class Order(models.Model):
     order_date = models.DateTimeField(auto_now_add=True)
 
 
+# я ввела дополнительный класс OrderItem, так как покупатель
+# не обязательно выкупает все количество товара в наличии, а поле ManyToMany
+# в классе Order не позволяет включить только часть количества
+
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField()
 
-    def update_total_amount(self):
+    def update_amount(self):
         self.order.total_amount += self.item.item_price * self.quantity
         self.order.save()
+        self.item.item_quantity -= self.quantity
+        self.item.save()

@@ -26,14 +26,16 @@ class Command(BaseCommand):
         items = Item.objects.all()
         count = kwargs.get('count')
 
-        for i in range(1, count + 1):
+        for i in range(0, 15):
+            item = items[i]
+            quantity = count if item.item_quantity >= count else item.item_quantity
             order_item = OrderItem(
                 order=order,
-                item=items[i],
-                quantity=2,
+                item=item,
+                quantity=quantity,
             )
             order_item.save()
-            order_item.update_total_amount()
+            order_item.update_amount()
         order.save()
 
         self.stdout.write(
