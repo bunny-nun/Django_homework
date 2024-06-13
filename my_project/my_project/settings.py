@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'phonenumber_field',
     'my_app',
+    'my_app_02',
 ]
 
 MIDDLEWARE = [
@@ -148,6 +150,11 @@ LOGGING = {
             'filename': './log/django.log',
             'formatter': 'verbose',
         },
+        'file_02': {
+            'class': 'logging.FileHandler',
+            'filename': './log/django_02.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -156,6 +163,11 @@ LOGGING = {
         },
         'myapp': {
             'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'myapp_02': {
+            'handlers': ['console', 'file_02'],
             'level': 'INFO',
             'propagate': True,
         },
