@@ -7,12 +7,12 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('pk', type=int, help='Item ID')
-        parser.add_argument('item_name', type=str, help='Item name')
+        parser.add_argument('quantity', type=int, help='Item quantity')
 
     def handle(self, *args, **kwargs):
         pk = kwargs['pk']
-        name = kwargs['item_name']
+        quantity = kwargs['quantity']
         item = Item.objects.filter(pk=pk).first()
-        item.item_name = name
+        item.item_quantity = quantity
         item.save()
-        self.stdout.write(f'Название товара {item} изменено')
+        self.stdout.write(f'Количество товара {item} изменено на {quantity} ')

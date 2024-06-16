@@ -10,8 +10,8 @@ class Command(BaseCommand):
         parser.add_argument('item_price', type=float, help='Item price')
 
     def handle(self, *args, **kwargs):
-        pk = kwargs.get('pk')
-        price = kwargs.get('item_price')
+        pk = kwargs['pk']
+        price = kwargs['item_price']
         item = Item.objects.filter(pk=pk).first()
         item.item_price = price
         item.save()
