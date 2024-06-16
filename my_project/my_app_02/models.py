@@ -32,7 +32,7 @@ class Order(models.Model):
 
 # я ввела дополнительный класс OrderItem, так как покупатель
 # не обязательно выкупает все количество товара в наличии, а поле ManyToMany
-# в классе Order не позволяет включить только часть количества
+# в классе Order не позволит включить только часть количества
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)

@@ -10,8 +10,8 @@ class Command(BaseCommand):
         parser.add_argument('customer_name', type=str, help='Customer name')
 
     def handle(self, *args, **kwargs):
-        pk = kwargs.get('pk')
-        name = kwargs.get('customer_name')
+        pk = kwargs['pk']
+        name = kwargs['customer_name']
         customer = Customer.objects.filter(pk=pk).first()
         customer.customer_name = name
         customer.save()

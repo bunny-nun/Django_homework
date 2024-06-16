@@ -9,7 +9,7 @@ class Command(BaseCommand):
         parser.add_argument('pk', type=int, help='Customer ID')
 
     def handle(self, *args, **kwargs):
-        pk = kwargs.get('pk')
+        pk = kwargs['pk']
         customer = Customer.objects.filter(pk=pk).first()
         if customer is not None:
             orders = Order.objects.filter(customer=customer)
