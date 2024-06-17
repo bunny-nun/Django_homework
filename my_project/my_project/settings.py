@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'my_app',
     'my_app_02',
-    'my_app_03',
 ]
 
 MIDDLEWARE = [

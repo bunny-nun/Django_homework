@@ -1,20 +1,20 @@
 from django.http import HttpResponse
-
+from django.shortcuts import render
 from .models import *
 
 
-def get_customers(request):
-    customers = Customer.objects.all()
-    return HttpResponse(f'customers: {customers}')
+def header_menu():
+    menu = [{'title': "Главная", 'url': '/'},
+            {'title': "Блузки и рубашки", 'url': '/top/'},
+            {'title': "Брюки", 'url': '/pants/'},
+            {'title': "Обувь", 'url': '/shoes/'},
+            {'title': "Контакты", 'url': '/contacts/'}]
+    return menu
 
 
-def get_items(request):
-    items = Item.objects.all()
-    return HttpResponse(f'items: {items}')
+def index(request):
 
-
-def get_orders(request):
-    orders = Order.objects.all()
-    return HttpResponse(f'orders: {orders}')
-
-
+    context = {'menu': header_menu(),
+               'title': 'Главная',
+               'cur_url': '/'}
+    return render(request, 'my_app_02/index.html', context)

@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from my_app_03.models import Item
+from my_app_02.models import Item
 
 
 class Command(BaseCommand):

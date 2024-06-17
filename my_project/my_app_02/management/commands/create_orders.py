@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 import random
-from my_app_03.models import *
+from my_app_02.models import *
 
 
 class Command(BaseCommand):
