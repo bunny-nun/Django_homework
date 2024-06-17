@@ -10,7 +10,7 @@ class Command(BaseCommand):
         parser.add_argument('count', type=int, help='Items quantity')
 
     def handle(self, *args, **kwargs):
-        customer = random.randint(14, 23)
+        customer = random.randint(1, 12)
         try:
             customer = Customer.objects.get(pk=customer)
         except Customer.DoesNotExist:
@@ -27,7 +27,7 @@ class Command(BaseCommand):
         items = Item.objects.all()
         count = kwargs['count']
 
-        for i in range(24, 38, 3):
+        for i in range(1, 16, 3):
             item = items[i]
             quantity = count if item.item_quantity >= count else item.item_quantity
             order_item = OrderItem(
