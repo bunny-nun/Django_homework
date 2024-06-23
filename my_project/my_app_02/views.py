@@ -1,12 +1,55 @@
-from django.shortcuts import render, get_object_or_404
+import logging
 from .models import *
+from django.shortcuts import render, get_object_or_404, redirect
+from .forms import CustomerForm
 from django.utils import timezone
 from datetime import timedelta
+from django.contrib.auth.hashers import make_password
+
+logger = logging.getLogger(__name__)
 
 
 def index(request):
     context = {'title': 'Главная'}
     return render(request, 'my_app_02/index.html', context)
+
+
+def register(request):
+    if request.method == 'POST':
+        form = CustomerForm(request.POST)
+        if form.is_valid():
+            customer_name = form.cleaned_data['customer_name']
+            email = form.cleaned_data['email']
+            phone_number = form.cleaned_data['phone_number']
+            address = form.cleaned_data['address']
+            password = form.cleaned_data['password']
+            logger.info(
+                f'Получены данные пользователя {customer_name=}, {email=}, '
+                f'{phone_number=}, {address=}')
+            hashed_password = make_password(password)
+            customer = Customer(customer_name=customer_name, email=email,
+                                phone_number=phone_number, address=address,
+                                password=hashed_password)
+            customer.save()
+            message = 'Пользователь успешно сохранен'
+            return redirect('registration_success')
+        else:
+            message = 'Ошибка в данных'
+    else:
+        form = CustomerForm()
+        message = 'Заполните форму'
+    context = {
+        'title': 'Регистрация',
+        'form': form,
+        'message': message,
+    }
+    return render(request, 'my_app_02/register.html', context)
+
+
+def registration_success(request):
+    context = {'title': 'Успешная регистрация'}
+    return render(request,
+                  'my_app_02/registration_success.html', context)
 
 
 def get_customer_orders(customer, days):

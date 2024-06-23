@@ -7,6 +7,7 @@ class Customer(models.Model):
     email = models.EmailField(unique=True)
     phone_number = PhoneNumberField(unique=True)
     address = models.TextField()
+    password = models.TextField()
     registration_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
