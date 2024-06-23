@@ -4,20 +4,8 @@ from django.utils import timezone
 from datetime import timedelta
 
 
-def header_menu():
-    menu = [{'title': "Главная", 'url': '/'},
-            {'title': "Блузки и рубашки", 'url': 'my_app_02/top/'},
-            {'title': "Брюки", 'url': 'my_app_02/pants/'},
-            {'title': "Обувь", 'url': 'my_app_02/shoes/'},
-            {'title': "Заказы", 'url': 'my_app_02/orders/'}]
-    return menu
-
-
 def index(request):
-    cur_url = request.path
-    context = {'menu': header_menu(),
-               'title': 'Главная',
-               'cur_url': cur_url}
+    context = {'title': 'Главная'}
     return render(request, 'my_app_02/index.html', context)
 
 
@@ -41,10 +29,7 @@ def customer_orders_7_days(request, customer_id):
     order_items_7_days = get_customer_orders(customer, 7)
     order_items_30_days = get_customer_orders(customer, 30)
     order_items_365_days = get_customer_orders(customer, 365)
-    cur_url = request.path
-    context = {'menu': header_menu(),
-               'title': 'Главная',
-               'cur_url': cur_url,
+    context = {'title': 'Заказы',
                'customer': customer,
                'items_7_days': order_items_7_days,
                'items_30_days': order_items_30_days,
@@ -53,8 +38,5 @@ def customer_orders_7_days(request, customer_id):
 
 
 def page_not_found(request, exception):
-    cur_url = request.path
-    context = {'menu': header_menu(),
-               'title': 'Страница не найдена',
-               'cur_url': cur_url}
+    context = {'title': 'Страница не найдена'}
     return render(request, "my_app_02/404.html", context, status=404)

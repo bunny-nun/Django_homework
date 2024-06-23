@@ -1,0 +1,18 @@
+{% load static %}
+{% load custom_tags %}
+
+<div class="top">
+    <header>
+        <div class="logo_group">
+            <img src="{% static 'my_app_02/images/logo_main_1.svg' %}" alt="main_logo" class="logo_image">
+        </div>
+        <div class="header_menu">
+            <a class="header_link{% if request.path == '/' %}_selection{% endif %}" href="/">Главная</a>
+            <a class="header_link{% if request.path|contains:'/my_app_02/top/' %}_selection{% endif %}" href="/my_app_02/top/">Блузки и рубашки</a>
+            <a class="header_link{% if request.path|contains:'/my_app_02/pants/' %}_selection{% endif %}" href="/my_app_02/pants/">Брюки</a>
+            <a class="header_link{% if request.path|contains:'/my_app_02/shoes/' %}_selection{% endif %}" href="/my_app_02/shoes/">Обувь</a>
+            <a class="header_link{% if request.path|contains:'/my_app_02/orders/' %}_selection{% endif %}" href="/my_app_02/orders/">Заказы</a>
+            <button class="order">Заказать</button>
+        </div>
+    </header>
+</div>
