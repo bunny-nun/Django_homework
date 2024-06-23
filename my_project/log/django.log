@@ -2941,3 +2941,6 @@ ERROR 2024-06-24 01:58:02,359 basehttp 5924 976 "POST /my_app_02/register/ HTTP/
 INFO 2024-06-24 01:58:08,994 basehttp 5924 976 "POST /my_app_02/register/ HTTP/1.1" 302 0
 INFO 2024-06-24 01:58:08,998 basehttp 5924 976 "GET /my_app_02/registration_success/ HTTP/1.1" 200 1335
 INFO 2024-06-24 01:58:09,008 basehttp 5924 976 "GET /static/my_app_02/images/reg.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:59:18,557 basehttp 5924 976 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-24 02:00:11,896 autoreload 5924 9080 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:00:12,640 autoreload 7444 15432 Watching for file changes with StatReloader
