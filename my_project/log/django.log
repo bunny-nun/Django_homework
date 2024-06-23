@@ -2662,3 +2662,5 @@ WARNING 2024-06-23 22:32:13,513 log 9544 15876 Not Found: /my_app_02/orders/
 WARNING 2024-06-23 22:32:13,513 basehttp 9544 15876 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
 INFO 2024-06-23 22:32:16,353 basehttp 9544 15876 "GET /my_app_02/orders/11/ HTTP/1.1" 200 12997
 INFO 2024-06-23 22:32:22,761 basehttp 9544 15876 "GET /my_app_02/orders/1/ HTTP/1.1" 200 12996
+INFO 2024-06-23 22:33:34,289 autoreload 9544 6456 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 22:33:34,983 autoreload 10452 9428 Watching for file changes with StatReloader
