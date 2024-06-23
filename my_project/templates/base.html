@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>{% block title %} Online Store La Modda {% endblock %}</title>
+    {% load static %}
+    {% load custom_tags %}
+    <link rel="stylesheet" href="{% static 'my_app_02/css/style.css' %}">
+</head>
+<body>
+<div class="top">
+    <header>
+        <div class="logo_group">
+            <img src="{% static 'my_app_02/images/logo_main_1.svg' %}"
+                 alt="main_logo" class="logo_image">
+        </div>
+        <div class="header_menu">
+            {% for page in menu %}
+            {% if cur_url == page.url %}
+            <a class="header_link_selection" href="{{ page.url }}">{{ page.title }}</a>
+            {% elif cur_url != '/' and page.url != '/' and cur_url|contains:page.url %}
+            <a class="header_link_selection" href="{{ page.url }}">{{ page.title }}</a>
+            {% else %}
+            <a class="header_link" href="{{ page.url }}">{{ page.title }}</a>
+            {% endif %}
+            {% endfor %}
+            <button class="order">Заказать</button>
+        </div>
+    </header>
+</div>
+
+{% block content %}
+Страница не заполнена
+{% endblock %}
+
+<footer>
+    <p class="footer_text">
+        Copyright © La Modda 2024. All Rights Reserved.
+    </p>
+</footer>
+</body>
+</html>

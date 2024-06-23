@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+{{ block.super }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+
+<div class="top">
+    <h1 class="top_contacts">
+        Страница не найдена
+    </h1>
+    <div class="not_found_block">
+        <img src="{% static 'my_app_02/images/404.png' %}" class="picture">
+    </div>
+</div>
+{% endblock %}

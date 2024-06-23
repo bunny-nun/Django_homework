@@ -1,8 +1,9 @@
 from django.urls import path
 from . import views
 
+handler404 = views.page_not_found
+
 urlpatterns = [
-    path('customers/', views.get_customers, name='customers'),
-    path('items/', views.get_items, name='items'),
-    path('orders/', views.get_orders, name='orders'),
+    path('', views.index, name='index'),
+    path('orders/<int:customer_id>/', views.customer_orders_7_days, name='orders'),
 ]

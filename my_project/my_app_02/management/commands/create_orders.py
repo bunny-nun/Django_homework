@@ -1,4 +1,5 @@
 from django.core.management.base import BaseCommand
+import random
 from my_app_02.models import *
 
 
@@ -6,10 +7,10 @@ class Command(BaseCommand):
     help = 'Create order'
 
     def add_arguments(self, parser):
-        parser.add_argument('count', type=int, help='Item quantity')
+        parser.add_argument('count', type=int, help='Items quantity')
 
     def handle(self, *args, **kwargs):
-        customer = 5
+        customer = random.randint(1, 12)
         try:
             customer = Customer.objects.get(pk=customer)
         except Customer.DoesNotExist:
@@ -24,9 +25,9 @@ class Command(BaseCommand):
         order.save()
 
         items = Item.objects.all()
-        count = kwargs.get('count')
+        count = kwargs['count']
 
-        for i in range(0, 15, 8):
+        for i in range(1, 16, 3):
             item = items[i]
             quantity = count if item.item_quantity >= count else item.item_quantity
             order_item = OrderItem(
