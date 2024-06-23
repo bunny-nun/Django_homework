@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+{{ block.super }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="orders">
+    <h2 class="orders_title">Заказы пользователя {{ customer }}</h2>
+
+    <h4><a href="javascript:void(0);" onclick="toggleVisibility('table-7-days')" class="periods_title">За последние 7 дней</a></h4>
+    <div id="table-7-days" class="toggle-content">
+        <table class="orders_table">
+            <thead>
+            <tr>
+                <th class="orders_table">Название</th>
+                <th class="orders_table">Описание</th>
+                <th class="orders_table">Цена</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in items_7_days %}
+            <tr>
+                <td class="orders_table">{{ item.item_name }}</td>
+                <td class="orders_table">{{ item.item_description }}</td>
+                <td class="orders_table">{{ item.item_price }} рублей</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">Нет заказов за последние 7 дней</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <h4><a href="javascript:void(0);" onclick="toggleVisibility('table-30-days')" class="periods_title">За последние 30 дней</a></h4>
+    <div id="table-30-days" class="toggle-content">
+        <table class="orders_table">
+            <thead>
+            <tr>
+                <th class="orders_table">Название</th>
+                <th class="orders_table">Описание</th>
+                <th class="orders_table">Цена</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in items_30_days %}
+            <tr>
+                <td class="orders_table">{{ item.item_name }}</td>
+                <td class="orders_table">{{ item.item_description }}</td>
+                <td class="orders_table">{{ item.item_price }} рублей</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">Нет заказов за последние 30 дней</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <h4><a href="javascript:void(0);" onclick="toggleVisibility('table-365-days')" class="periods_title">За последние 365 дней</a></h4>
+    <div id="table-365-days" class="toggle-content">
+        <table class="orders_table">
+            <thead>
+            <tr>
+                <th class="orders_table">Название</th>
+                <th class="orders_table">Описание</th>
+                <th class="orders_table">Цена</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in items_365_days %}
+            <tr>
+                <td class="orders_table">{{ item.item_name }}</td>
+                <td class="orders_table">{{ item.item_description }}</td>
+                <td class="orders_table">{{ item.item_price }} рублей</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">Нет заказов за последние 365 дней</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elements = document.getElementsByClassName('toggle-content');
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = 'none';
+        }
+    });
+
+    function toggleVisibility(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "table";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
+{% endblock %}

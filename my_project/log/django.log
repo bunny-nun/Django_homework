@@ -34,3 +34,2443 @@ INFO 2024-06-04 00:16:26,657 basehttp 12960 26032 "GET /index/ HTTP/1.1" 200 245
 INFO 2024-06-04 00:16:27,576 basehttp 12960 26032 "GET /about/ HTTP/1.1" 200 1333
 INFO 2024-06-04 00:16:28,778 basehttp 12960 26032 "GET /index/ HTTP/1.1" 200 2454
 INFO 2024-06-04 00:16:29,630 basehttp 12960 26032 "GET /about/ HTTP/1.1" 200 1333
+INFO 2024-06-17 11:21:08,681 autoreload 1444 14076 Watching for file changes with StatReloader
+ERROR 2024-06-17 11:21:10,533 log 1444 13160 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('static', filename='images/icon_watch_video.svg')' from 'url_for('static', filename='images/icon_watch_video.svg')'
+ERROR 2024-06-17 11:21:10,536 basehttp 1444 13160 "GET / HTTP/1.1" 500 200719
+WARNING 2024-06-17 11:21:10,688 log 1444 13160 Not Found: /favicon.ico
+WARNING 2024-06-17 11:21:10,688 basehttp 1444 13160 "GET /favicon.ico HTTP/1.1" 404 2431
+ERROR 2024-06-17 11:28:51,039 log 1444 8576 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-17 11:28:51,041 basehttp 1444 8576 "GET / HTTP/1.1" 500 189416
+INFO 2024-06-17 11:31:01,768 autoreload 10660 12020 Watching for file changes with StatReloader
+ERROR 2024-06-17 11:31:02,893 log 10660 5432 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-17 11:31:02,897 basehttp 10660 5432 "GET / HTTP/1.1" 500 189416
+INFO 2024-06-17 11:35:35,967 autoreload 20852 5948 Watching for file changes with StatReloader
+ERROR 2024-06-17 11:35:37,437 log 20852 23396 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-17 11:35:37,442 basehttp 20852 23396 "GET / HTTP/1.1" 500 193616
+INFO 2024-06-17 11:45:14,109 autoreload 9780 4960 Watching for file changes with StatReloader
+ERROR 2024-06-17 11:45:16,138 log 9780 10324 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-17 11:45:16,142 basehttp 9780 10324 "GET / HTTP/1.1" 500 193616
+ERROR 2024-06-17 11:45:32,688 log 9780 10324 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-17 11:45:32,690 basehttp 9780 10324 "GET / HTTP/1.1" 500 193753
+INFO 2024-06-17 11:49:26,936 autoreload 9780 4960 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-17 11:49:27,448 autoreload 1360 22852 Watching for file changes with StatReloader
+ERROR 2024-06-17 12:01:47,210 log 1360 5980 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-17 12:01:47,214 basehttp 1360 5980 "GET / HTTP/1.1" 500 193672
+ERROR 2024-06-19 15:58:37,319 log 1360 17708 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-19 15:58:37,333 basehttp 1360 17708 "GET / HTTP/1.1" 500 193672
+ERROR 2024-06-21 13:32:04,512 log 1360 32596 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-21 13:32:04,520 basehttp 1360 32596 "GET / HTTP/1.1" 500 193672
+INFO 2024-06-22 19:03:50,096 autoreload 9092 33424 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:03:51,925 log 9092 25620 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:03:51,930 basehttp 9092 25620 "GET / HTTP/1.1" 500 193672
+ERROR 2024-06-22 19:06:04,062 log 9092 25620 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:06:04,064 basehttp 9092 25620 "GET / HTTP/1.1" 500 193870
+ERROR 2024-06-22 19:06:25,854 log 9092 25620 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:06:25,857 basehttp 9092 25620 "GET / HTTP/1.1" 500 193941
+ERROR 2024-06-22 19:06:33,237 log 9092 25620 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:06:33,239 basehttp 9092 25620 "GET / HTTP/1.1" 500 193941
+ERROR 2024-06-22 19:06:44,177 log 9092 25620 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 30: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:06:44,180 basehttp 9092 25620 "GET / HTTP/1.1" 500 191959
+INFO 2024-06-22 19:12:59,780 autoreload 9092 33424 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-22 19:13:00,446 autoreload 28560 31900 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:13:11,524 log 28560 20068 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:13:11,527 basehttp 28560 20068 "GET / HTTP/1.1" 500 193809
+INFO 2024-06-22 19:13:30,212 autoreload 28560 31900 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-22 19:13:30,758 autoreload 23756 30992 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:13:35,120 log 23756 5196 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:13:35,124 basehttp 23756 5196 "GET / HTTP/1.1" 500 193872
+ERROR 2024-06-22 19:16:10,257 log 23756 5196 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:16:10,259 basehttp 23756 5196 "GET / HTTP/1.1" 500 193910
+INFO 2024-06-22 19:16:32,787 autoreload 24220 5896 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:16:34,543 log 24220 18512 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:16:34,546 basehttp 24220 18512 "GET / HTTP/1.1" 500 193773
+INFO 2024-06-22 19:17:39,905 autoreload 17368 23700 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:17:42,530 log 17368 9048 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:17:42,533 basehttp 17368 9048 "GET / HTTP/1.1" 500 193910
+INFO 2024-06-22 19:23:54,609 autoreload 23136 23064 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:23:56,074 log 23136 3228 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:23:56,078 basehttp 23136 3228 "GET / HTTP/1.1" 500 193772
+WARNING 2024-06-22 19:23:56,287 log 23136 3228 Not Found: /favicon.ico
+WARNING 2024-06-22 19:23:56,288 basehttp 23136 3228 "GET /favicon.ico HTTP/1.1" 404 2431
+INFO 2024-06-22 19:55:52,159 autoreload 21624 11880 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:55:53,663 log 21624 20692 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 22: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 19:55:53,668 basehttp 21624 20692 "GET / HTTP/1.1" 500 193772
+INFO 2024-06-22 19:57:39,388 autoreload 16000 4332 Watching for file changes with StatReloader
+ERROR 2024-06-22 19:57:42,519 log 16000 15648 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-06-22 19:57:42,520 basehttp 16000 15648 "GET / HTTP/1.1" 500 135702
+INFO 2024-06-22 20:16:53,723 autoreload 13328 9624 Watching for file changes with StatReloader
+ERROR 2024-06-22 20:16:56,031 log 13328 21104 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-06-22 20:16:56,032 basehttp 13328 21104 "GET / HTTP/1.1" 500 135646
+INFO 2024-06-22 20:19:12,306 autoreload 13708 13416 Watching for file changes with StatReloader
+INFO 2024-06-22 20:19:14,458 basehttp 13708 16284 "GET / HTTP/1.1" 200 5736
+WARNING 2024-06-22 20:19:14,491 basehttp 13708 7660 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 404 1840
+WARNING 2024-06-22 20:19:14,499 basehttp 13708 15968 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 404 1840
+INFO 2024-06-22 20:19:14,743 basehttp 13708 22576 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-22 20:19:14,747 basehttp 13708 22576 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-22 20:19:14,766 basehttp 13708 22576 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-22 20:19:14,766 basehttp 13708 2524 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-22 20:19:14,777 basehttp 13708 22576 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-22 20:19:14,779 basehttp 13708 2524 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-22 20:19:14,782 basehttp 13708 16284 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10133
+INFO 2024-06-22 20:19:14,783 basehttp 13708 22576 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-22 20:19:14,790 basehttp 13708 15464 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-22 20:19:14,797 basehttp 13708 1916 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-22 20:19:14,822 basehttp 13708 14732 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-22 20:19:14,833 basehttp 13708 14732 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-22 20:19:14,833 basehttp 13708 22576 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+INFO 2024-06-22 20:19:14,834 basehttp 13708 15464 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-22 20:19:14,835 basehttp 13708 1916 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+ERROR 2024-06-22 20:19:29,204 log 13708 1916 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 20, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 23: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-06-22 20:19:29,208 basehttp 13708 1916 "GET / HTTP/1.1" 500 193867
+INFO 2024-06-22 20:19:39,239 basehttp 13708 1916 "GET / HTTP/1.1" 200 5736
+WARNING 2024-06-22 20:19:39,263 basehttp 13708 15464 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 404 1840
+WARNING 2024-06-22 20:19:39,264 basehttp 13708 1916 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 404 1840
+WARNING 2024-06-22 20:19:46,273 log 13708 22576 Not Found: /top/
+WARNING 2024-06-22 20:19:46,274 basehttp 13708 22576 "GET /top/ HTTP/1.1" 404 2410
+WARNING 2024-06-22 20:19:49,260 log 13708 22576 Not Found: /pants/
+WARNING 2024-06-22 20:19:49,260 basehttp 13708 22576 "GET /pants/ HTTP/1.1" 404 2416
+WARNING 2024-06-22 20:19:51,689 log 13708 22576 Not Found: /shoes/
+WARNING 2024-06-22 20:19:51,689 basehttp 13708 22576 "GET /shoes/ HTTP/1.1" 404 2416
+WARNING 2024-06-22 20:19:53,957 log 13708 22576 Not Found: /contacts/
+WARNING 2024-06-22 20:19:53,957 basehttp 13708 22576 "GET /contacts/ HTTP/1.1" 404 2425
+INFO 2024-06-22 20:23:27,350 autoreload 22720 15296 Watching for file changes with StatReloader
+WARNING 2024-06-22 20:23:50,511 log 22720 12312 Not Found: /
+WARNING 2024-06-22 20:23:50,511 basehttp 22720 12312 "GET / HTTP/1.1" 404 2280
+INFO 2024-06-22 20:23:58,177 autoreload 22720 15296 D:\STUDY\homework_01\my_project\my_project\urls.py changed, reloading.
+INFO 2024-06-22 20:23:58,831 autoreload 18316 10716 Watching for file changes with StatReloader
+INFO 2024-06-22 20:23:59,915 basehttp 18316 13868 "GET / HTTP/1.1" 200 5736
+WARNING 2024-06-22 20:23:59,938 basehttp 18316 13868 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 404 1840
+WARNING 2024-06-22 20:23:59,940 basehttp 18316 12064 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 404 1840
+INFO 2024-06-22 20:24:42,207 basehttp 18316 8324 "GET / HTTP/1.1" 200 5736
+WARNING 2024-06-22 20:24:42,225 basehttp 18316 17780 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 404 1840
+WARNING 2024-06-22 20:24:42,225 basehttp 18316 8324 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 404 1840
+INFO 2024-06-22 20:25:46,678 basehttp 18316 352 "GET /my_app_02 HTTP/1.1" 301 0
+INFO 2024-06-22 20:25:46,684 basehttp 18316 18512 "GET /my_app_02/ HTTP/1.1" 200 5736
+WARNING 2024-06-22 20:25:46,711 basehttp 18316 18512 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 404 1840
+WARNING 2024-06-22 20:25:46,712 basehttp 18316 22944 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 404 1840
+INFO 2024-06-22 20:25:52,187 basehttp 18316 13656 "GET / HTTP/1.1" 200 5736
+WARNING 2024-06-22 20:25:52,212 basehttp 18316 13656 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 404 1840
+WARNING 2024-06-22 20:25:52,212 basehttp 18316 10908 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 404 1840
+INFO 2024-06-22 20:44:03,769 autoreload 12440 19600 Watching for file changes with StatReloader
+INFO 2024-06-22 20:44:06,491 basehttp 12440 9648 "GET / HTTP/1.1" 200 5736
+INFO 2024-06-22 20:44:06,611 basehttp 12440 12128 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-22 20:44:06,616 basehttp 12440 9648 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-23 02:21:22,734 autoreload 5684 8600 Watching for file changes with StatReloader
+INFO 2024-06-23 02:21:23,941 basehttp 5684 5324 "GET / HTTP/1.1" 200 5730
+INFO 2024-06-23 02:21:24,220 basehttp 5684 19880 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-23 02:21:24,224 basehttp 5684 19880 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-23 02:21:24,224 basehttp 5684 5324 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10133
+INFO 2024-06-23 02:21:24,225 basehttp 5684 23120 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-23 02:21:24,235 basehttp 5684 5324 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-23 02:21:24,236 basehttp 5684 23120 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-23 02:21:24,240 basehttp 5684 5324 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-23 02:21:24,259 basehttp 5684 19880 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-23 02:21:24,286 basehttp 5684 19880 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-23 02:21:24,287 basehttp 5684 5324 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-23 02:21:24,287 basehttp 5684 23120 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-23 02:21:24,290 basehttp 5684 19880 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+INFO 2024-06-23 02:21:24,307 basehttp 5684 13928 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-23 02:21:24,308 basehttp 5684 3752 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-23 02:21:24,312 basehttp 5684 13688 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-23 02:23:11,998 autoreload 16420 340 Watching for file changes with StatReloader
+INFO 2024-06-23 02:23:13,354 basehttp 16420 12068 "GET / HTTP/1.1" 200 5730
+WARNING 2024-06-23 02:23:36,301 log 16420 12068 Not Found: /orders
+WARNING 2024-06-23 02:23:36,301 basehttp 16420 12068 "GET /orders HTTP/1.1" 404 2416
+INFO 2024-06-23 02:23:53,414 basehttp 16420 12068 "GET /my_app_02/orders HTTP/1.1" 301 0
+ERROR 2024-06-23 02:23:53,457 log 16420 6984 Internal Server Error: /my_app_02/orders/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: customer_orders_7_days() missing 1 required positional argument: 'customer_id'
+ERROR 2024-06-23 02:23:53,458 basehttp 16420 6984 "GET /my_app_02/orders/ HTTP/1.1" 500 63651
+INFO 2024-06-23 02:27:40,565 autoreload 16420 340 D:\STUDY\homework_01\my_project\my_app_02\urls.py changed, reloading.
+INFO 2024-06-23 02:27:41,113 autoreload 7504 13932 Watching for file changes with StatReloader
+INFO 2024-06-23 02:27:47,384 basehttp 7504 5568 "GET /my_app_02/orders/8 HTTP/1.1" 301 0
+INFO 2024-06-23 02:27:47,430 basehttp 7504 8564 "GET /my_app_02/orders/8/ HTTP/1.1" 200 2261
+INFO 2024-06-23 02:28:07,969 basehttp 7504 8564 "GET /my_app_02/orders/11/ HTTP/1.1" 200 2261
+INFO 2024-06-23 02:29:21,363 basehttp 7504 8564 "GET /my_app_02/orders/11/ HTTP/1.1" 200 2261
+INFO 2024-06-23 02:29:22,851 basehttp 7504 8564 "GET /my_app_02/orders/11/ HTTP/1.1" 200 2605
+INFO 2024-06-23 02:34:11,929 autoreload 7504 13932 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 02:34:12,432 autoreload 5864 22728 Watching for file changes with StatReloader
+ERROR 2024-06-23 02:34:15,116 log 5864 13840 Internal Server Error: /my_app_02/orders/11/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 32, in customer_orders_7_days
+    item = Item.object.filter(pk=i).first()
+AttributeError: type object 'Item' has no attribute 'object'
+ERROR 2024-06-23 02:34:15,117 basehttp 5864 13840 "GET /my_app_02/orders/11/ HTTP/1.1" 500 69196
+INFO 2024-06-23 02:34:48,655 autoreload 5864 22728 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 02:34:49,121 autoreload 3104 7656 Watching for file changes with StatReloader
+ERROR 2024-06-23 02:34:51,569 log 3104 22828 Internal Server Error: /my_app_02/orders/11/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'OrderItem'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 32, in customer_orders_7_days
+    item = Item.objects.filter(pk=i).first()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\lookups.py", line 364, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <OrderItem: OrderItem object (6)>.
+ERROR 2024-06-23 02:34:51,575 basehttp 3104 22828 "GET /my_app_02/orders/11/ HTTP/1.1" 500 132982
+INFO 2024-06-23 02:35:27,416 autoreload 3104 7656 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 02:35:27,980 autoreload 21732 8460 Watching for file changes with StatReloader
+INFO 2024-06-23 02:35:28,761 basehttp 21732 21228 "GET /my_app_02/orders/11/ HTTP/1.1" 200 4774
+INFO 2024-06-23 02:36:31,354 basehttp 21732 21228 "GET /my_app_02/orders/8/ HTTP/1.1" 200 4774
+INFO 2024-06-23 02:36:45,013 basehttp 21732 21228 "GET /my_app_02/orders/8/ HTTP/1.1" 200 4774
+INFO 2024-06-23 02:36:49,352 basehttp 21732 21228 "GET /my_app_02/orders/1/ HTTP/1.1" 200 4774
+INFO 2024-06-23 02:37:27,265 basehttp 21732 21228 "GET /my_app_02/orders/8/ HTTP/1.1" 200 4774
+INFO 2024-06-23 02:38:10,994 basehttp 21732 21228 "GET /my_app_02/orders/11/ HTTP/1.1" 200 4774
+INFO 2024-06-23 02:40:27,722 autoreload 21600 20008 Watching for file changes with StatReloader
+INFO 2024-06-23 02:40:33,032 basehttp 21600 14188 "GET /my_app_02/orders/2/ HTTP/1.1" 200 10022
+INFO 2024-06-23 02:45:51,988 autoreload 21832 13892 Watching for file changes with StatReloader
+INFO 2024-06-23 02:45:58,927 basehttp 21832 7616 "GET / HTTP/1.1" 200 5730
+INFO 2024-06-23 02:48:01,818 autoreload 18832 20008 Watching for file changes with StatReloader
+INFO 2024-06-23 02:48:03,173 basehttp 18832 4612 "GET /my_app_02/orders/2/ HTTP/1.1" 200 10022
+INFO 2024-06-23 02:48:09,423 basehttp 18832 4612 "GET /my_app_02/orders/3/ HTTP/1.1" 200 2261
+INFO 2024-06-23 02:48:18,722 basehttp 18832 4612 "GET /my_app_02/orders/4/ HTTP/1.1" 200 4774
+INFO 2024-06-23 02:51:57,616 basehttp 18832 4612 "GET /my_app_02/orders/4/ HTTP/1.1" 200 2261
+INFO 2024-06-23 02:55:32,969 autoreload 13688 11900 Watching for file changes with StatReloader
+INFO 2024-06-23 02:55:40,267 basehttp 13688 20772 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 02:56:35,267 autoreload 13688 11900 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 02:56:35,846 autoreload 15008 21732 Watching for file changes with StatReloader
+INFO 2024-06-23 02:56:36,627 basehttp 15008 2652 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 02:56:46,520 basehttp 15008 2652 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 02:58:38,860 autoreload 15008 21732 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 02:58:39,431 autoreload 12792 11428 Watching for file changes with StatReloader
+INFO 2024-06-23 02:58:49,306 basehttp 12792 16824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:00:09,731 basehttp 12792 16824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:00:21,591 basehttp 12792 16824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:00:24,886 basehttp 12792 16824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:00:29,099 basehttp 12792 16824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:00:35,627 autoreload 10596 23196 Watching for file changes with StatReloader
+INFO 2024-06-23 03:00:37,626 basehttp 10596 4384 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:01:16,955 autoreload 22568 18420 Watching for file changes with StatReloader
+INFO 2024-06-23 03:01:19,373 basehttp 22568 12200 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:03:59,948 autoreload 22568 18420 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 03:04:00,514 autoreload 11016 7472 Watching for file changes with StatReloader
+INFO 2024-06-23 03:04:04,883 basehttp 11016 23288 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:04:32,210 basehttp 11016 23288 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:04:36,616 basehttp 11016 23288 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:04:58,041 basehttp 11016 23288 "GET /my_app_02/orders/4/ HTTP/1.1" 200 2261
+INFO 2024-06-23 03:05:04,371 basehttp 11016 23288 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:05:19,503 autoreload 12580 13564 Watching for file changes with StatReloader
+INFO 2024-06-23 03:05:22,066 basehttp 12580 5968 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:05:59,787 autoreload 12580 13564 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 03:06:00,377 autoreload 7700 5060 Watching for file changes with StatReloader
+INFO 2024-06-23 03:11:08,732 autoreload 11900 13292 Watching for file changes with StatReloader
+INFO 2024-06-23 03:11:11,100 basehttp 11900 2984 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 03:19:52,315 autoreload 11900 13292 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 03:19:52,865 autoreload 20584 14692 Watching for file changes with StatReloader
+ERROR 2024-06-23 03:19:55,469 log 20584 12620 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 35, in customer_orders_7_days
+    all_order_items.add(item)
+AttributeError: 'list' object has no attribute 'add'
+ERROR 2024-06-23 03:19:55,470 basehttp 20584 12620 "GET /my_app_02/orders/5/ HTTP/1.1" 500 69486
+ERROR 2024-06-23 03:20:07,320 log 20584 12620 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 35, in customer_orders_7_days
+    all_order_items.append(item)
+AttributeError: 'list' object has no attribute 'add'
+ERROR 2024-06-23 03:20:07,321 basehttp 20584 12620 "GET /my_app_02/orders/5/ HTTP/1.1" 500 69491
+INFO 2024-06-23 03:20:08,080 autoreload 20584 14692 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 03:20:08,552 autoreload 15000 364 Watching for file changes with StatReloader
+INFO 2024-06-23 03:20:12,281 basehttp 15000 10820 "GET /my_app_02/orders/5/ HTTP/1.1" 200 7396
+INFO 2024-06-23 03:31:45,413 autoreload 15000 364 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 03:31:45,965 autoreload 23388 13224 Watching for file changes with StatReloader
+INFO 2024-06-23 03:31:49,865 basehttp 23388 3204 "GET /my_app_02/orders/5/ HTTP/1.1" 200 6348
+INFO 2024-06-23 11:48:29,232 autoreload 10248 22420 Watching for file changes with StatReloader
+INFO 2024-06-23 11:48:35,333 basehttp 10248 13620 "GET /my_app_02/orders/5/ HTTP/1.1" 200 14621
+INFO 2024-06-23 11:56:09,705 autoreload 22908 16284 Watching for file changes with StatReloader
+ERROR 2024-06-23 11:56:12,499 log 22908 21864 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 51, in customer_orders_7_days
+    return render(request, 'my_app_02/orders.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'title' appears more than once
+ERROR 2024-06-23 11:56:12,501 basehttp 22908 21864 "GET /my_app_02/orders/5/ HTTP/1.1" 500 218895
+INFO 2024-06-23 11:56:39,227 basehttp 22908 21864 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16054
+INFO 2024-06-23 11:56:58,736 basehttp 22908 21864 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16054
+INFO 2024-06-23 11:58:11,843 autoreload 22304 1724 Watching for file changes with StatReloader
+INFO 2024-06-23 11:58:14,628 basehttp 22304 7332 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16054
+INFO 2024-06-23 11:58:19,101 basehttp 22304 7332 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16054
+INFO 2024-06-23 12:01:07,490 autoreload 23164 12164 Watching for file changes with StatReloader
+INFO 2024-06-23 12:01:13,189 basehttp 23164 1404 "GET / HTTP/1.1" 200 5730
+INFO 2024-06-23 12:01:27,610 basehttp 23164 1404 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16055
+INFO 2024-06-23 12:02:01,564 autoreload 23164 12164 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:02:02,041 autoreload 12668 2536 Watching for file changes with StatReloader
+INFO 2024-06-23 12:02:04,081 basehttp 12668 13648 "GET /my_app_02/orders/5/ HTTP/1.1" 200 13859
+INFO 2024-06-23 12:02:12,021 autoreload 12668 2536 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:02:12,523 autoreload 13872 17668 Watching for file changes with StatReloader
+INFO 2024-06-23 12:02:29,130 basehttp 13872 14260 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16055
+INFO 2024-06-23 12:06:02,896 basehttp 13872 14260 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16055
+INFO 2024-06-23 12:10:05,864 autoreload 13872 17668 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:10:06,362 autoreload 1916 10724 Watching for file changes with StatReloader
+INFO 2024-06-23 12:10:09,147 basehttp 1916 11236 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16045
+INFO 2024-06-23 12:10:54,025 autoreload 1916 10724 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:10:54,529 autoreload 244 20736 Watching for file changes with StatReloader
+INFO 2024-06-23 12:10:56,588 basehttp 244 16316 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16045
+WARNING 2024-06-23 12:12:52,979 log 244 16316 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 12:12:52,980 basehttp 244 16316 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 12:12:56,858 basehttp 244 16316 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16045
+INFO 2024-06-23 12:16:48,611 autoreload 244 20736 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:16:49,097 autoreload 14192 17772 Watching for file changes with StatReloader
+INFO 2024-06-23 12:16:53,783 basehttp 14192 13056 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16045
+INFO 2024-06-23 12:21:25,710 autoreload 14192 17772 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:21:26,185 autoreload 21624 23776 Watching for file changes with StatReloader
+INFO 2024-06-23 12:22:22,069 autoreload 21624 23776 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:22:22,631 autoreload 7704 24124 Watching for file changes with StatReloader
+INFO 2024-06-23 12:23:49,158 autoreload 13168 9632 Watching for file changes with StatReloader
+ERROR 2024-06-23 12:23:54,181 log 13168 19340 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: 'page.url.startswith(cur_url)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 50, in customer_orders_7_days
+    return render(request, 'my_app_02/orders.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(cur_url)' from 'page.url.startswith(cur_url)'
+ERROR 2024-06-23 12:23:54,186 basehttp 13168 19340 "GET /my_app_02/orders/5/ HTTP/1.1" 500 243857
+ERROR 2024-06-23 12:24:18,881 log 13168 19340 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: 'cur_url.startswith(page.url)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 50, in customer_orders_7_days
+    return render(request, 'my_app_02/orders.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(page.url)' from 'cur_url.startswith(page.url)'
+ERROR 2024-06-23 12:24:18,883 basehttp 13168 19340 "GET /my_app_02/orders/5/ HTTP/1.1" 500 243860
+INFO 2024-06-23 12:24:44,105 autoreload 13168 9632 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:24:44,622 autoreload 9592 23716 Watching for file changes with StatReloader
+INFO 2024-06-23 12:25:05,985 autoreload 9592 23716 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:25:06,455 autoreload 13880 21548 Watching for file changes with StatReloader
+ERROR 2024-06-23 12:25:09,500 log 13880 24160 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: 'cur_url.startswith(page.url)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 51, in customer_orders_7_days
+    return render(request, 'my_app_02/orders.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(page.url)' from 'cur_url.startswith(page.url)'
+ERROR 2024-06-23 12:25:09,505 basehttp 13880 24160 "GET /my_app_02/orders/5/ HTTP/1.1" 500 244074
+INFO 2024-06-23 12:27:15,908 autoreload 13880 21548 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:27:16,421 autoreload 24124 7640 Watching for file changes with StatReloader
+ERROR 2024-06-23 12:27:31,451 log 24124 14176 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: 'cur_url|startswith:page.url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 60, in customer_orders_7_days
+    return render(request, 'my_app_02/orders.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'startswith'
+ERROR 2024-06-23 12:27:31,456 basehttp 24124 14176 "GET /my_app_02/orders/5/ HTTP/1.1" 500 249341
+INFO 2024-06-23 12:29:47,922 autoreload 24124 7640 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:29:48,495 autoreload 23104 7016 Watching for file changes with StatReloader
+INFO 2024-06-23 12:30:08,711 autoreload 23104 7016 D:\STUDY\homework_01\my_project\my_app_02\templatetags\custom_tags.py changed, reloading.
+INFO 2024-06-23 12:30:09,225 autoreload 5344 23764 Watching for file changes with StatReloader
+INFO 2024-06-23 12:30:27,202 basehttp 5344 13772 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16205
+INFO 2024-06-23 12:31:16,510 basehttp 5344 13772 "GET / HTTP/1.1" 200 5789
+INFO 2024-06-23 12:32:12,198 autoreload 5344 23764 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:32:12,676 autoreload 7428 15652 Watching for file changes with StatReloader
+INFO 2024-06-23 12:32:15,114 basehttp 7428 13628 "GET / HTTP/1.1" 200 5789
+INFO 2024-06-23 12:32:26,325 basehttp 7428 13628 "GET / HTTP/1.1" 200 5789
+INFO 2024-06-23 12:32:26,864 autoreload 7428 15652 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:32:27,372 autoreload 14192 23868 Watching for file changes with StatReloader
+INFO 2024-06-23 12:32:32,330 basehttp 14192 20016 "GET / HTTP/1.1" 200 5789
+INFO 2024-06-23 12:34:04,037 basehttp 14192 20016 "GET / HTTP/1.1" 200 5789
+WARNING 2024-06-23 12:34:25,676 log 14192 20016 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 12:34:25,676 basehttp 14192 20016 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 12:36:57,972 autoreload 20404 22340 Watching for file changes with StatReloader
+INFO 2024-06-23 12:37:02,433 basehttp 20404 3156 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 12:37:06,379 log 20404 3156 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 12:37:06,380 basehttp 20404 3156 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 12:37:09,067 basehttp 20404 3156 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16096
+INFO 2024-06-23 12:42:17,492 autoreload 24412 8516 Watching for file changes with StatReloader
+ERROR 2024-06-23 12:42:21,028 log 24412 20032 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: 'cur_url.startswith:page.url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 53, in customer_orders_7_days
+    return render(request, 'my_app_02/orders.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':page.url' from 'cur_url.startswith:page.url'
+ERROR 2024-06-23 12:42:21,033 basehttp 24412 20032 "GET /my_app_02/orders/5/ HTTP/1.1" 500 244301
+ERROR 2024-06-23 12:43:16,427 log 24412 20032 Internal Server Error: /my_app_02/orders/5/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 53, in customer_orders_7_days
+    return render(request, 'my_app_02/orders.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 195, in parse
+    retval = self.expression()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 210, in expression
+    left = t.led(left, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 56, in led
+    self.second = parser.expression(bp)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 206, in expression
+    left = t.nud(self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 24, in nud
+    raise parser.error_class(
+django.template.exceptions.TemplateSyntaxError: Not expecting 'and' in this position in if tag.
+ERROR 2024-06-23 12:43:16,429 basehttp 24412 20032 "GET /my_app_02/orders/5/ HTTP/1.1" 500 230825
+INFO 2024-06-23 12:43:44,314 basehttp 24412 20032 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16086
+INFO 2024-06-23 12:45:15,157 autoreload 24412 8516 D:\STUDY\homework_01\my_project\my_app_02\templatetags\custom_tags.py changed, reloading.
+INFO 2024-06-23 12:45:15,642 autoreload 18256 16032 Watching for file changes with StatReloader
+INFO 2024-06-23 12:47:02,192 autoreload 24184 8532 Watching for file changes with StatReloader
+INFO 2024-06-23 12:47:05,315 basehttp 24184 20924 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16060
+INFO 2024-06-23 12:47:09,262 basehttp 24184 20924 "GET / HTTP/1.1" 200 5735
+WARNING 2024-06-23 12:47:11,101 log 24184 20924 Not Found: /orders/
+WARNING 2024-06-23 12:47:11,103 basehttp 24184 20924 "GET /orders/ HTTP/1.1" 404 2419
+WARNING 2024-06-23 12:47:14,342 log 24184 20924 Not Found: /orders/5
+WARNING 2024-06-23 12:47:14,343 basehttp 24184 20924 "GET /orders/5 HTTP/1.1" 404 2422
+INFO 2024-06-23 12:47:52,942 autoreload 24184 8532 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:47:53,529 autoreload 1516 14676 Watching for file changes with StatReloader
+WARNING 2024-06-23 12:47:54,768 log 1516 14540 Not Found: /orders/
+WARNING 2024-06-23 12:47:54,768 basehttp 1516 14540 "GET /orders/ HTTP/1.1" 404 2419
+INFO 2024-06-23 12:48:23,821 autoreload 13376 14380 Watching for file changes with StatReloader
+INFO 2024-06-23 12:48:28,883 basehttp 13376 12928 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 12:48:31,081 log 13376 12928 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 12:48:31,082 basehttp 13376 12928 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 12:48:34,434 basehttp 13376 12928 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16096
+INFO 2024-06-23 12:48:45,643 basehttp 13376 12928 "GET / HTTP/1.1" 200 5771
+INFO 2024-06-23 12:50:32,275 autoreload 13376 14380 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:50:32,819 autoreload 13152 3124 Watching for file changes with StatReloader
+INFO 2024-06-23 12:51:40,097 autoreload 13152 3124 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 12:51:40,603 autoreload 18456 23140 Watching for file changes with StatReloader
+INFO 2024-06-23 12:51:44,944 basehttp 18456 12056 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 12:51:46,391 log 18456 12056 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 12:51:46,391 basehttp 18456 12056 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 12:52:34,577 autoreload 18456 23140 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 12:52:35,082 autoreload 23972 21324 Watching for file changes with StatReloader
+WARNING 2024-06-23 12:52:42,943 log 23972 16608 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 12:52:42,944 basehttp 23972 16608 "GET /my_app_02/orders/ HTTP/1.1" 404 179
+WARNING 2024-06-23 13:07:44,313 log 23972 21196 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:07:44,314 basehttp 23972 21196 "GET /my_app_02/orders/ HTTP/1.1" 404 179
+INFO 2024-06-23 13:07:53,131 autoreload 1132 1404 Watching for file changes with StatReloader
+INFO 2024-06-23 13:07:56,351 basehttp 1132 23196 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 13:07:57,831 log 1132 23196 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:07:57,832 basehttp 1132 23196 "GET /my_app_02/orders/ HTTP/1.1" 404 179
+INFO 2024-06-23 13:10:31,953 autoreload 23724 22644 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:10:34,066 log 23724 18980 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:10:34,067 basehttp 23724 18980 "GET /my_app_02/orders/ HTTP/1.1" 404 932
+WARNING 2024-06-23 13:10:34,076 log 23724 18980 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:10:34,076 basehttp 23724 18980 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 932
+INFO 2024-06-23 13:12:54,955 autoreload 23724 22644 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 13:12:55,539 autoreload 24240 4688 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:14:47,082 log 24240 368 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:14:47,083 basehttp 24240 368 "GET /my_app_02/orders/ HTTP/1.1" 404 932
+WARNING 2024-06-23 13:14:47,092 log 24240 368 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:14:47,092 basehttp 24240 368 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 932
+WARNING 2024-06-23 13:20:03,839 log 24240 15368 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:20:03,839 basehttp 24240 15368 "GET /my_app_02/orders/ HTTP/1.1" 404 932
+WARNING 2024-06-23 13:20:03,852 log 24240 15368 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:20:03,852 basehttp 24240 15368 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 932
+INFO 2024-06-23 13:21:40,619 autoreload 24240 4688 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 13:21:41,102 autoreload 16316 14372 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:21:43,994 log 16316 22480 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:21:43,994 basehttp 16316 22480 "GET /my_app_02/orders/ HTTP/1.1" 404 932
+WARNING 2024-06-23 13:21:44,002 log 16316 22480 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:21:44,003 basehttp 16316 22480 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 932
+INFO 2024-06-23 13:23:25,207 autoreload 5136 23880 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:23:28,085 log 5136 13168 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:23:28,085 basehttp 5136 13168 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 13:23:28,095 log 5136 13168 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:23:28,095 basehttp 5136 13168 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 13:25:29,102 autoreload 5136 23880 D:\STUDY\homework_01\my_project\my_project\urls.py changed, reloading.
+INFO 2024-06-23 13:25:29,665 autoreload 18408 23368 Watching for file changes with StatReloader
+INFO 2024-06-23 13:25:44,653 autoreload 18408 23368 D:\STUDY\homework_01\my_project\my_project\urls.py changed, reloading.
+INFO 2024-06-23 13:25:45,198 autoreload 11208 7344 Watching for file changes with StatReloader
+INFO 2024-06-23 13:25:53,954 autoreload 11208 7344 D:\STUDY\homework_01\my_project\my_project\urls.py changed, reloading.
+INFO 2024-06-23 13:25:54,419 autoreload 12588 15612 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:25:57,325 log 12588 10248 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:25:57,325 basehttp 12588 10248 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 13:25:57,333 log 12588 10248 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:25:57,334 basehttp 12588 10248 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+WARNING 2024-06-23 13:26:11,164 log 12588 10248 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:26:11,164 basehttp 12588 10248 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+WARNING 2024-06-23 13:26:11,197 log 12588 10248 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:26:11,197 basehttp 12588 10248 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 13:37:05,503 autoreload 12588 15612 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 13:37:06,047 autoreload 14396 7476 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:37:06,270 log 14396 19152 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:37:06,270 basehttp 14396 19152 "GET /my_app_02/orders/ HTTP/1.1" 404 2840
+WARNING 2024-06-23 13:41:31,011 log 14396 19152 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:41:31,011 basehttp 14396 19152 "GET /my_app_02/orders/ HTTP/1.1" 404 2840
+INFO 2024-06-23 13:41:31,055 autoreload 14396 7476 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 13:41:31,625 autoreload 23776 9288 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:41:35,752 log 23776 20484 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:41:35,755 basehttp 23776 20484 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 13:41:35,763 log 23776 20484 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:41:35,763 basehttp 23776 20484 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 13:42:33,906 autoreload 23776 9288 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 13:42:34,397 autoreload 5216 13448 Watching for file changes with StatReloader
+INFO 2024-06-23 13:42:37,577 basehttp 5216 6604 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 13:43:05,266 log 5216 6604 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:43:05,266 basehttp 5216 6604 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 13:43:05,280 log 5216 6604 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:43:05,280 basehttp 5216 6604 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 13:43:05,297 autoreload 5216 13448 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 13:43:05,832 autoreload 23488 23660 Watching for file changes with StatReloader
+INFO 2024-06-23 13:43:20,585 basehttp 23488 22532 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 13:43:21,493 log 23488 22532 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:43:21,493 basehttp 23488 22532 "GET /my_app_02/orders/ HTTP/1.1" 404 179
+INFO 2024-06-23 13:43:33,645 autoreload 12944 23728 Watching for file changes with StatReloader
+INFO 2024-06-23 13:43:37,106 basehttp 12944 5748 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 13:43:38,838 log 12944 5748 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:43:38,839 basehttp 12944 5748 "GET /my_app_02/orders/ HTTP/1.1" 404 179
+INFO 2024-06-23 13:45:44,981 autoreload 12944 23728 D:\STUDY\homework_01\my_project\my_project\urls.py changed, reloading.
+INFO 2024-06-23 13:45:45,479 autoreload 5216 12268 Watching for file changes with StatReloader
+INFO 2024-06-23 13:51:47,459 autoreload 11656 14176 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:51:50,622 log 11656 13648 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:51:50,623 basehttp 11656 13648 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 13:51:50,641 log 11656 13648 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:51:50,641 basehttp 11656 13648 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+WARNING 2024-06-23 13:56:33,068 log 11656 13648 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 13:56:33,068 basehttp 11656 13648 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 13:56:33,079 log 11656 13648 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:56:33,079 basehttp 11656 13648 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 13:59:30,449 autoreload 13944 5620 Watching for file changes with StatReloader
+WARNING 2024-06-23 13:59:35,560 log 13944 24380 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:59:35,563 basehttp 13944 24380 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+WARNING 2024-06-23 13:59:35,573 log 13944 24380 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 13:59:35,573 basehttp 13944 24380 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:02:21,572 autoreload 5548 22968 Watching for file changes with StatReloader
+INFO 2024-06-23 14:02:29,999 basehttp 5548 5488 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:02:32,205 log 5548 5488 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:02:32,205 basehttp 5548 5488 "GET /my_app_02/orders/ HTTP/1.1" 404 940
+WARNING 2024-06-23 14:02:32,219 log 5548 5488 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:02:32,219 basehttp 5548 5488 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 940
+INFO 2024-06-23 14:03:29,378 autoreload 22524 21564 Watching for file changes with StatReloader
+WARNING 2024-06-23 14:03:34,318 log 22524 24456 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:03:34,318 basehttp 22524 24456 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:03:34,328 log 22524 24456 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:03:34,328 basehttp 22524 24456 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:03:39,011 basehttp 22524 24456 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:03:45,830 log 22524 24456 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:03:45,832 basehttp 22524 24456 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:03:45,845 log 22524 24456 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:03:45,845 basehttp 22524 24456 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:04:51,283 autoreload 15628 19724 Watching for file changes with StatReloader
+INFO 2024-06-23 14:04:52,298 basehttp 15628 9288 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:04:54,630 log 15628 9288 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:04:54,630 basehttp 15628 9288 "GET /my_app_02/orders/ HTTP/1.1" 404 1003
+WARNING 2024-06-23 14:04:54,642 log 15628 9288 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:04:54,642 basehttp 15628 9288 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 1003
+INFO 2024-06-23 14:06:25,793 autoreload 5312 5696 Watching for file changes with StatReloader
+INFO 2024-06-23 14:06:28,360 basehttp 5312 24172 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:06:31,629 log 5312 24172 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:06:31,630 basehttp 5312 24172 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:06:31,642 log 5312 24172 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:06:31,643 basehttp 5312 24172 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:06:43,158 autoreload 16768 23620 Watching for file changes with StatReloader
+INFO 2024-06-23 14:06:44,205 basehttp 16768 18988 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:06:45,331 log 16768 18988 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:06:45,331 basehttp 16768 18988 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:06:45,345 log 16768 18988 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:06:45,345 basehttp 16768 18988 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:07:01,358 basehttp 16768 18988 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:07:03,480 log 16768 18988 Not Found: /my_app_02/pants/
+WARNING 2024-06-23 14:07:03,480 basehttp 16768 18988 "GET /my_app_02/pants/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:07:03,496 log 16768 18988 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:07:03,496 basehttp 16768 18988 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+WARNING 2024-06-23 14:07:29,959 log 16768 18988 Not Found: /my_app_02/pants/
+WARNING 2024-06-23 14:07:29,959 basehttp 16768 18988 "GET /my_app_02/pants/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:07:29,969 log 16768 18988 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:07:29,969 basehttp 16768 18988 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:07:35,817 autoreload 5888 14260 Watching for file changes with StatReloader
+WARNING 2024-06-23 14:07:37,760 log 5888 24500 Not Found: /my_app_02/pants/
+WARNING 2024-06-23 14:07:37,761 basehttp 5888 24500 "GET /my_app_02/pants/ HTTP/1.1" 404 919
+INFO 2024-06-23 14:08:18,658 autoreload 9812 15056 Watching for file changes with StatReloader
+WARNING 2024-06-23 14:08:20,682 log 9812 22896 Not Found: /my_app_02/pants/
+WARNING 2024-06-23 14:08:20,682 basehttp 9812 22896 "GET /my_app_02/pants/ HTTP/1.1" 404 925
+WARNING 2024-06-23 14:08:20,694 log 9812 22896 Not Found: /static/my_app_02/images/not_found.png
+WARNING 2024-06-23 14:08:20,694 basehttp 9812 22896 "GET /static/my_app_02/images/not_found.png HTTP/1.1" 404 925
+INFO 2024-06-23 14:13:38,140 autoreload 16040 18652 Watching for file changes with StatReloader
+INFO 2024-06-23 14:13:39,587 basehttp 16040 11740 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:13:41,791 log 16040 11740 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:13:41,792 basehttp 16040 11740 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:13:41,807 log 16040 11740 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:13:41,807 basehttp 16040 11740 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:14:00,595 autoreload 16040 18652 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 14:14:01,117 autoreload 8064 23888 Watching for file changes with StatReloader
+WARNING 2024-06-23 14:14:04,689 log 8064 9824 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:14:04,689 basehttp 8064 9824 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:14:04,699 log 8064 9824 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:14:04,700 basehttp 8064 9824 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+WARNING 2024-06-23 14:17:15,183 log 8064 9824 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:17:15,183 basehttp 8064 9824 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:17:15,196 log 8064 9824 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:17:15,196 basehttp 8064 9824 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+WARNING 2024-06-23 14:17:37,855 log 8064 9824 Not Found: /my_app_02/404.html
+WARNING 2024-06-23 14:17:37,856 basehttp 8064 9824 "GET /my_app_02/404.html HTTP/1.1" 404 919
+WARNING 2024-06-23 14:17:37,870 log 8064 9824 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:17:37,872 basehttp 8064 9824 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:17:46,661 basehttp 8064 9824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16093
+WARNING 2024-06-23 14:17:51,687 log 8064 9824 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:17:51,688 basehttp 8064 9824 "GET /my_app_02/orders/ HTTP/1.1" 404 919
+WARNING 2024-06-23 14:17:51,702 log 8064 9824 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:17:51,702 basehttp 8064 9824 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 919
+INFO 2024-06-23 14:19:53,071 autoreload 23704 17464 Watching for file changes with StatReloader
+INFO 2024-06-23 14:19:54,739 basehttp 23704 9912 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:19:57,290 log 23704 9912 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:19:57,290 basehttp 23704 9912 "GET /my_app_02/orders/ HTTP/1.1" 404 924
+WARNING 2024-06-23 14:19:57,304 log 23704 9912 Not Found: /static/my_app_02/images/404_test.png
+WARNING 2024-06-23 14:19:57,304 basehttp 23704 9912 "GET /static/my_app_02/images/404_test.png HTTP/1.1" 404 924
+INFO 2024-06-23 14:22:14,649 autoreload 22748 19896 Watching for file changes with StatReloader
+INFO 2024-06-23 14:22:15,930 basehttp 22748 13400 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:22:19,463 log 22748 13400 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:22:19,464 basehttp 22748 13400 "GET /my_app_02/orders/ HTTP/1.1" 404 925
+WARNING 2024-06-23 14:22:19,477 log 22748 13400 Not Found: /static/my_app_02/images/not_found.png
+WARNING 2024-06-23 14:22:19,477 basehttp 22748 13400 "GET /static/my_app_02/images/not_found.png HTTP/1.1" 404 925
+INFO 2024-06-23 14:23:56,864 autoreload 9800 14384 Watching for file changes with StatReloader
+INFO 2024-06-23 14:23:57,691 basehttp 9800 14476 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:24:00,267 log 9800 14476 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:24:00,267 basehttp 9800 14476 "GET /my_app_02/orders/ HTTP/1.1" 404 988
+WARNING 2024-06-23 14:24:00,282 log 9800 14476 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:24:00,283 basehttp 9800 14476 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 988
+INFO 2024-06-23 14:24:18,922 autoreload 18576 12952 Watching for file changes with StatReloader
+WARNING 2024-06-23 14:24:20,433 log 18576 22392 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:24:20,433 basehttp 18576 22392 "GET /my_app_02/orders/ HTTP/1.1" 404 974
+WARNING 2024-06-23 14:24:20,445 log 18576 22392 Not Found: /static/my_app_02/images/404.png
+WARNING 2024-06-23 14:24:20,445 basehttp 18576 22392 "GET /static/my_app_02/images/404.png HTTP/1.1" 404 974
+INFO 2024-06-23 14:24:42,449 autoreload 18576 12952 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 14:24:42,920 autoreload 24108 8460 Watching for file changes with StatReloader
+WARNING 2024-06-23 14:24:45,000 log 24108 23324 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:24:45,000 basehttp 24108 23324 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 14:25:06,809 autoreload 3212 9696 Watching for file changes with StatReloader
+INFO 2024-06-23 14:25:10,009 basehttp 3212 10956 "GET / HTTP/1.1" 200 5771
+INFO 2024-06-23 14:25:10,140 basehttp 3212 10956 "GET /static/my_app_02/images/404.png HTTP/1.1" 200 1729234
+INFO 2024-06-23 14:25:43,361 autoreload 10864 8896 Watching for file changes with StatReloader
+INFO 2024-06-23 14:25:44,483 basehttp 10864 21196 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:25:48,018 log 10864 21196 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:25:48,018 basehttp 10864 21196 "GET /my_app_02/orders/ HTTP/1.1" 404 905
+INFO 2024-06-23 14:27:20,962 autoreload 10864 8896 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 14:27:21,495 autoreload 16316 22608 Watching for file changes with StatReloader
+INFO 2024-06-23 14:27:22,775 basehttp 16316 23816 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:27:24,283 log 16316 23816 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:27:24,284 basehttp 16316 23816 "GET /my_app_02/orders/ HTTP/1.1" 404 1526
+WARNING 2024-06-23 14:27:27,782 log 16316 23816 Not Found: /my_app_02/orders/my_app_02/orders/
+WARNING 2024-06-23 14:27:27,783 basehttp 16316 23816 "GET /my_app_02/orders/my_app_02/orders/ HTTP/1.1" 404 1526
+INFO 2024-06-23 14:27:31,709 basehttp 16316 23816 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:27:35,137 log 16316 23816 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:27:35,137 basehttp 16316 23816 "GET /my_app_02/orders/ HTTP/1.1" 404 1526
+INFO 2024-06-23 14:27:38,652 basehttp 16316 23816 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16093
+INFO 2024-06-23 14:34:05,331 autoreload 23160 10044 Watching for file changes with StatReloader
+INFO 2024-06-23 14:34:07,038 basehttp 23160 10648 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16093
+INFO 2024-06-23 14:34:14,576 basehttp 23160 10648 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16093
+INFO 2024-06-23 14:35:55,902 autoreload 20584 23776 Watching for file changes with StatReloader
+INFO 2024-06-23 14:35:57,224 basehttp 20584 23204 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:35:59,459 log 20584 23204 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:35:59,459 basehttp 20584 23204 "GET /my_app_02/orders/ HTTP/1.1" 404 1526
+INFO 2024-06-23 14:36:01,928 basehttp 20584 23204 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16093
+INFO 2024-06-23 14:40:27,010 autoreload 24504 23880 Watching for file changes with StatReloader
+INFO 2024-06-23 14:40:30,412 basehttp 24504 23648 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:40:33,207 log 24504 23648 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:40:33,207 basehttp 24504 23648 "GET /my_app_02/orders/ HTTP/1.1" 404 1526
+INFO 2024-06-23 14:40:36,058 basehttp 24504 23648 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16093
+INFO 2024-06-23 14:44:57,785 autoreload 10512 9828 Watching for file changes with StatReloader
+INFO 2024-06-23 14:44:59,733 basehttp 10512 24328 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16349
+INFO 2024-06-23 14:46:27,873 basehttp 10512 24328 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:47:14,255 log 10512 24328 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:47:14,255 basehttp 10512 24328 "GET /my_app_02/orders/ HTTP/1.1" 404 1526
+INFO 2024-06-23 14:47:17,203 basehttp 10512 24328 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16370
+INFO 2024-06-23 14:47:32,216 autoreload 20668 23668 Watching for file changes with StatReloader
+INFO 2024-06-23 14:47:33,728 basehttp 20668 2060 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16370
+INFO 2024-06-23 14:47:34,658 basehttp 20668 2060 "GET /my_app_02/orders/5/ HTTP/1.1" 200 16370
+INFO 2024-06-23 14:49:40,451 autoreload 13516 20748 Watching for file changes with StatReloader
+INFO 2024-06-23 14:49:42,506 basehttp 13516 21472 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17202
+INFO 2024-06-23 14:50:27,612 autoreload 22204 10116 Watching for file changes with StatReloader
+INFO 2024-06-23 14:50:30,093 basehttp 22204 11164 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17202
+INFO 2024-06-23 14:52:30,618 autoreload 21060 14168 Watching for file changes with StatReloader
+INFO 2024-06-23 14:52:52,824 basehttp 21060 16004 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 14:52:52,839 log 21060 3328 Not Found: /static/my_app_02/images/logo_main_1.svg
+WARNING 2024-06-23 14:52:52,839 log 21060 16004 Not Found: /static/my_app_02/css/style.css
+WARNING 2024-06-23 14:52:52,839 log 21060 7332 Not Found: /static/my_app_02/images/icon_watch_video.svg
+WARNING 2024-06-23 14:52:52,839 basehttp 21060 3328 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,844 basehttp 21060 16004 "GET /static/my_app_02/css/style.css HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,846 log 21060 11748 Not Found: /static/my_app_02/images/top.png
+WARNING 2024-06-23 14:52:52,846 basehttp 21060 7332 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,846 log 21060 16004 Not Found: /static/my_app_02/images/logo_3.png
+WARNING 2024-06-23 14:52:52,846 log 21060 3328 Not Found: /static/my_app_02/images/logo_5.png
+WARNING 2024-06-23 14:52:52,849 log 21060 11844 Not Found: /static/my_app_02/images/logo_1.png
+WARNING 2024-06-23 14:52:52,850 log 21060 7332 Not Found: /static/my_app_02/images/logo_4.png
+WARNING 2024-06-23 14:52:52,850 log 21060 1356 Not Found: /static/my_app_02/images/logo_2.png
+WARNING 2024-06-23 14:52:52,852 basehttp 21060 11748 "GET /static/my_app_02/images/top.png HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,852 basehttp 21060 16004 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,852 basehttp 21060 3328 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,852 basehttp 21060 11844 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,852 log 21060 11748 Not Found: /static/my_app_02/images/about_us.png
+WARNING 2024-06-23 14:52:52,852 basehttp 21060 7332 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,852 basehttp 21060 1356 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,856 log 21060 11844 Not Found: /static/my_app_02/images/icon_1.svg
+WARNING 2024-06-23 14:52:52,856 log 21060 3328 Not Found: /static/my_app_02/images/icon_2.svg
+WARNING 2024-06-23 14:52:52,856 log 21060 16004 Not Found: /static/my_app_02/images/icon_3.svg
+WARNING 2024-06-23 14:52:52,860 basehttp 21060 11748 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,861 basehttp 21060 11844 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,861 basehttp 21060 3328 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,861 basehttp 21060 16004 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 404 1516
+WARNING 2024-06-23 14:52:52,913 log 21060 16004 Not Found: /favicon.ico
+WARNING 2024-06-23 14:52:52,914 basehttp 21060 16004 "GET /favicon.ico HTTP/1.1" 404 1516
+INFO 2024-06-23 14:53:16,296 autoreload 21060 14168 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-23 14:53:16,892 autoreload 6264 16620 Watching for file changes with StatReloader
+INFO 2024-06-23 14:53:18,527 basehttp 6264 15488 "GET / HTTP/1.1" 200 5771
+INFO 2024-06-23 14:53:18,798 basehttp 6264 16420 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-23 14:53:18,801 basehttp 6264 16420 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-23 14:53:18,804 basehttp 6264 16420 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-23 14:53:18,807 basehttp 6264 16420 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-23 14:53:18,818 basehttp 6264 16420 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-23 14:53:18,833 basehttp 6264 16420 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-23 14:53:18,836 basehttp 6264 24168 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-23 14:53:18,839 basehttp 6264 16420 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-23 14:53:18,841 basehttp 6264 24168 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-23 14:53:18,849 basehttp 6264 21848 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-23 14:53:18,856 basehttp 6264 15488 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10760
+INFO 2024-06-23 14:53:18,865 basehttp 6264 10908 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-23 14:53:18,872 basehttp 6264 3448 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-23 14:53:18,885 basehttp 6264 21848 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+INFO 2024-06-23 14:53:18,887 basehttp 6264 10908 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-23 14:53:18,887 basehttp 6264 15488 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-23 14:53:18,887 basehttp 6264 3448 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+WARNING 2024-06-23 14:53:21,288 log 6264 3448 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:53:21,288 basehttp 6264 3448 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 14:53:28,008 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17202
+INFO 2024-06-23 14:54:15,066 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 14:55:32,615 basehttp 6264 3448 "GET / HTTP/1.1" 200 5771
+INFO 2024-06-23 14:55:32,626 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+WARNING 2024-06-23 14:55:48,971 log 6264 3448 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 14:55:48,971 basehttp 6264 3448 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 14:55:53,481 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17224
+INFO 2024-06-23 14:56:10,000 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17224
+INFO 2024-06-23 14:56:10,009 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10743
+INFO 2024-06-23 14:56:43,637 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17224
+INFO 2024-06-23 14:56:43,643 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10938
+INFO 2024-06-23 14:56:52,582 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17224
+INFO 2024-06-23 14:56:52,585 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10939
+INFO 2024-06-23 14:57:35,957 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17224
+INFO 2024-06-23 14:57:35,963 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 14:57:37,629 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17268
+INFO 2024-06-23 14:58:30,855 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17253
+INFO 2024-06-23 14:58:30,855 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 14:58:55,407 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:00:40,566 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17248
+INFO 2024-06-23 15:00:40,572 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:00:55,811 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17248
+INFO 2024-06-23 15:01:12,609 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17248
+INFO 2024-06-23 15:01:12,619 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10774
+INFO 2024-06-23 15:01:45,570 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17248
+INFO 2024-06-23 15:01:45,576 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10754
+INFO 2024-06-23 15:02:55,053 basehttp 6264 3448 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17248
+INFO 2024-06-23 15:02:55,061 basehttp 6264 3448 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10717
+INFO 2024-06-23 15:03:03,541 autoreload 20060 24060 Watching for file changes with StatReloader
+INFO 2024-06-23 15:03:05,385 basehttp 20060 23824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17248
+INFO 2024-06-23 15:03:05,393 basehttp 20060 23824 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:04:14,238 basehttp 20060 23824 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17248
+INFO 2024-06-23 15:04:14,245 basehttp 20060 23824 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:04:20,932 autoreload 8520 10260 Watching for file changes with StatReloader
+INFO 2024-06-23 15:04:22,507 basehttp 8520 13980 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17210
+INFO 2024-06-23 15:04:51,196 basehttp 8520 13980 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:05:41,861 autoreload 384 22280 Watching for file changes with StatReloader
+INFO 2024-06-23 15:05:45,862 basehttp 384 9812 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17210
+INFO 2024-06-23 15:05:45,937 basehttp 384 9812 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10699
+INFO 2024-06-23 15:07:48,425 autoreload 21308 22664 Watching for file changes with StatReloader
+INFO 2024-06-23 15:07:50,029 basehttp 21308 5460 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17231
+INFO 2024-06-23 15:07:50,100 basehttp 21308 5460 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10938
+INFO 2024-06-23 15:08:21,535 basehttp 21308 23608 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17231
+INFO 2024-06-23 15:10:13,143 basehttp 21308 23608 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17231
+INFO 2024-06-23 15:10:17,636 basehttp 21308 23608 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17231
+INFO 2024-06-23 15:10:20,774 basehttp 21308 23608 "GET / HTTP/1.1" 200 5771
+WARNING 2024-06-23 15:10:22,212 log 21308 23608 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 15:10:22,212 basehttp 21308 23608 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 15:10:26,188 basehttp 21308 23608 "GET /my_app_02/orders/2/ HTTP/1.1" 200 29261
+INFO 2024-06-23 15:10:30,572 basehttp 21308 23608 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17231
+INFO 2024-06-23 15:12:25,680 basehttp 21308 14656 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17231
+INFO 2024-06-23 15:12:25,690 basehttp 21308 14656 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10938
+INFO 2024-06-23 15:12:25,690 basehttp 21308 9648 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-23 15:12:25,709 basehttp 21308 9648 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-23 15:12:25,711 basehttp 21308 14656 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-23 15:12:25,711 basehttp 21308 7660 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-23 15:12:25,711 basehttp 21308 19248 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+INFO 2024-06-23 15:13:03,379 basehttp 21308 19248 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:20:46,362 basehttp 21308 22200 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17231
+INFO 2024-06-23 15:20:46,371 basehttp 21308 22200 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10877
+INFO 2024-06-23 15:20:55,250 autoreload 23088 24480 Watching for file changes with StatReloader
+INFO 2024-06-23 15:20:56,942 basehttp 23088 22636 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17273
+INFO 2024-06-23 15:20:56,955 basehttp 23088 22636 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:22:27,575 autoreload 17668 2652 Watching for file changes with StatReloader
+INFO 2024-06-23 15:22:29,347 basehttp 17668 15612 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17273
+INFO 2024-06-23 15:22:29,418 basehttp 17668 15612 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11118
+INFO 2024-06-23 15:23:57,346 autoreload 2940 1580 Watching for file changes with StatReloader
+INFO 2024-06-23 15:23:59,614 basehttp 2940 9712 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17234
+INFO 2024-06-23 15:23:59,687 basehttp 2940 9712 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11118
+INFO 2024-06-23 15:24:34,368 autoreload 14204 19744 Watching for file changes with StatReloader
+INFO 2024-06-23 15:24:36,056 basehttp 14204 8376 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17234
+INFO 2024-06-23 15:24:36,125 basehttp 14204 8376 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11058
+INFO 2024-06-23 15:25:04,670 autoreload 16772 17076 Watching for file changes with StatReloader
+INFO 2024-06-23 15:25:06,428 basehttp 16772 21508 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17234
+INFO 2024-06-23 15:25:06,496 basehttp 16772 21508 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11118
+INFO 2024-06-23 15:25:32,911 autoreload 24092 23052 Watching for file changes with StatReloader
+INFO 2024-06-23 15:25:34,639 basehttp 24092 17196 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17234
+INFO 2024-06-23 15:25:34,710 basehttp 24092 17196 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11120
+INFO 2024-06-23 15:25:49,187 basehttp 24092 17196 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:30:31,534 autoreload 1852 17000 Watching for file changes with StatReloader
+INFO 2024-06-23 15:30:34,434 basehttp 1852 24296 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17801
+INFO 2024-06-23 15:30:34,524 basehttp 1852 24296 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10951
+INFO 2024-06-23 15:31:05,535 autoreload 23556 5704 Watching for file changes with StatReloader
+INFO 2024-06-23 15:31:09,335 basehttp 23556 14384 "GET /my_app_02/orders/5/ HTTP/1.1" 200 17801
+INFO 2024-06-23 15:31:09,405 basehttp 23556 14384 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10983
+INFO 2024-06-23 15:32:08,859 autoreload 23868 10728 Watching for file changes with StatReloader
+INFO 2024-06-23 15:32:15,737 basehttp 23868 23384 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18935
+INFO 2024-06-23 15:32:15,747 basehttp 23868 23384 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-23 15:32:46,995 autoreload 24320 14252 Watching for file changes with StatReloader

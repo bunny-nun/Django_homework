@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}
 {{ block.super }} - {{ title }}
 {% endblock %}
@@ -19,8 +21,7 @@
             <div class="top_buttons">
                 <button class="start_button">Коллекция</button>
                 <div class="watch_video">
-                    <img src="{{ url_for('static', filename='images/icon_watch_video.svg')}}"
-                         alt="icon_watch_video">
+                    <img src="{% static 'my_app_02/images/icon_watch_video.svg' %}" alt="icon_watch_video">
                     <p class="watch_video_text">Посмотреть видео</p>
                 </div>
 
@@ -28,30 +29,29 @@
         </div>
 
         <div class="top_image">
-            <img src="{{ url_for('static', filename='images/top.png')}}"
-                 alt="top_image" class="picture">
+            <img src="{% static 'my_app_02/images/top.png' %}" class="picture">
         </div>
 
     </div>
     <div class="top_logos">
-        <img src="{{ url_for('static', filename='images/logo_1.png')}}"
+        <img src="{% static 'my_app_02/images/logo_1.png' %}"
              alt="logo_1">
-        <img src="{{ url_for('static', filename='images/logo_2.png')}}"
+        <img src="{% static 'my_app_02/images/logo_2.png' %}"
              alt="logo_2">
-        <img src="{{ url_for('static', filename='images/logo_3.png')}}"
+        <img src="{% static 'my_app_02/images/logo_3.png' %}"
              alt="logo_3">
-        <img src="{{ url_for('static', filename='images/logo_4.png')}}"
+        <img src="{% static 'my_app_02/images/logo_4.png' %}"
              alt="logo_4">
-        <img src="{{ url_for('static', filename='images/logo_5.png')}}"
+        <img src="{% static 'my_app_02/images/logo_5.png' %}"
              alt="logo_5">
-        <img src="{{ url_for('static', filename='images/logo_1.png')}}"
+        <img src="{% static 'my_app_02/images/logo_1.png' %}"
              alt="logo_6">
     </div>
 </div>
 
 <div class="about_us">
     <div class="about_us_image">
-        <img src="{{ url_for('static', filename='images/about_us.png')}}"
+        <img src="{% static 'my_app_02/images/about_us.png' %}"
              alt="graphic" class="picture">
     </div>
     <div class="about_us_content">
@@ -71,7 +71,7 @@
 <div class="features">
     <div class="features_01">
         <img class="features_image"
-             src="{{ url_for('static', filename='images/icon_1.svg')}}"
+             src="{% static 'my_app_02/images/icon_1.svg' %}"
              alt="growth">
         <h5 class="features_title">Высокое качество</h5>
         <p class="features_text">
@@ -85,7 +85,7 @@
     </div>
     <div class="features_02">
         <img class="features_image"
-             src="{{ url_for('static', filename='images/icon_2.svg')}}"
+             src="{% static 'my_app_02/images/icon_2.svg' %}"
              alt="leads">
         <h5 class="features_title">Доступные цены</h5>
         <p class="features_text">
@@ -98,7 +98,7 @@
     </div>
     <div class="features_01">
         <img class="features_image"
-             src="{{ url_for('static', filename='images/icon_3.svg')}}"
+             src="{% static 'my_app_02/images/icon_3.svg' %}"
              alt="sales">
         <h5 class="features_title">Отличное обслуживание</h5>
         <p class="features_text">
@@ -109,5 +109,5 @@
             <a href="#">Подробнее...</a>
         </div>
     </div>
-</div>>
+</div>
 {% endblock %}
