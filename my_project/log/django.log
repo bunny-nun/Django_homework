@@ -3029,3 +3029,4 @@ INFO 2024-06-24 03:07:02,861 basehttp 24308 5712 "POST /my_app_02/new_item/ HTTP
 INFO 2024-06-24 03:09:09,180 autoreload 24308 12844 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
 INFO 2024-06-24 03:09:09,682 autoreload 15324 21360 Watching for file changes with StatReloader
 INFO 2024-06-24 03:10:27,704 autoreload 18664 23732 Watching for file changes with StatReloader
+INFO 2024-06-24 03:11:11,720 basehttp 18664 24224 "POST /my_app_02/new_item/ HTTP/1.1" 200 2432
