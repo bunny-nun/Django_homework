@@ -2944,3 +2944,88 @@ INFO 2024-06-24 01:58:09,008 basehttp 5924 976 "GET /static/my_app_02/images/reg
 INFO 2024-06-24 01:59:18,557 basehttp 5924 976 "GET / HTTP/1.1" 200 5555
 INFO 2024-06-24 02:00:11,896 autoreload 5924 9080 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
 INFO 2024-06-24 02:00:12,640 autoreload 7444 15432 Watching for file changes with StatReloader
+INFO 2024-06-24 02:02:06,830 autoreload 7444 15432 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:02:07,357 autoreload 2996 8424 Watching for file changes with StatReloader
+INFO 2024-06-24 02:04:40,934 autoreload 2996 8424 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:04:41,468 autoreload 15556 14124 Watching for file changes with StatReloader
+INFO 2024-06-24 02:06:35,424 autoreload 15556 14124 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:06:35,994 autoreload 22040 22208 Watching for file changes with StatReloader
+INFO 2024-06-24 02:08:23,795 autoreload 21992 6252 Watching for file changes with StatReloader
+INFO 2024-06-24 02:08:32,772 basehttp 21992 8144 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18717
+INFO 2024-06-24 02:08:32,820 basehttp 21992 8144 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,820 basehttp 21992 2956 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,833 basehttp 21992 2956 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,833 basehttp 21992 8144 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,833 basehttp 21992 15692 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,844 basehttp 21992 15692 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,297 basehttp 21992 15692 "GET /my_app_02/register/ HTTP/1.1" 200 2319
+INFO 2024-06-24 02:08:36,318 basehttp 21992 15692 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 15692 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 8144 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 2956 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 23624 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:09:34,460 autoreload 364 3316 Watching for file changes with StatReloader
+INFO 2024-06-24 02:09:37,680 basehttp 364 7044 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 02:10:59,721 autoreload 364 3316 D:\STUDY\homework_01\my_project\my_app_02\models.py changed, reloading.
+INFO 2024-06-24 02:11:00,312 autoreload 21976 15080 Watching for file changes with StatReloader
+INFO 2024-06-24 02:13:16,289 autoreload 21976 15080 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-24 02:13:16,819 autoreload 13128 15072 Watching for file changes with StatReloader
+INFO 2024-06-24 02:17:00,594 autoreload 13128 15072 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:17:01,150 autoreload 23940 19280 Watching for file changes with StatReloader
+INFO 2024-06-24 02:19:26,612 autoreload 23940 19280 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-24 02:19:27,178 autoreload 16676 22116 Watching for file changes with StatReloader
+INFO 2024-06-24 02:19:46,324 autoreload 16676 22116 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-24 02:19:46,809 autoreload 10056 22604 Watching for file changes with StatReloader
+INFO 2024-06-24 02:25:09,825 autoreload 10056 22604 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 02:25:10,402 autoreload 22252 6608 Watching for file changes with StatReloader
+INFO 2024-06-24 03:03:18,776 autoreload 3636 18544 Watching for file changes with StatReloader
+INFO 2024-06-24 03:03:20,006 basehttp 3636 15852 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-24 03:03:20,026 basehttp 3636 15852 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,027 basehttp 3636 23352 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,027 basehttp 3636 14040 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,035 basehttp 3636 23352 "GET /static/my_app_02/images/top.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,038 basehttp 3636 14040 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,042 basehttp 3636 14124 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,042 basehttp 3636 15852 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 11456 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 23352 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 14040 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 16476 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,048 basehttp 3636 15852 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,048 basehttp 3636 14124 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 15852 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 16476 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 14040 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 14124 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:45,833 basehttp 3636 14124 "GET /my_app_02/new_item HTTP/1.1" 301 0
+INFO 2024-06-24 03:03:45,843 basehttp 3636 14040 "GET /my_app_02/new_item/ HTTP/1.1" 200 2469
+INFO 2024-06-24 03:04:16,396 basehttp 3636 14040 "POST /my_app_02/new_item/ HTTP/1.1" 200 2545
+INFO 2024-06-24 03:05:54,306 autoreload 3636 18544 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 03:05:54,906 autoreload 22548 22208 Watching for file changes with StatReloader
+INFO 2024-06-24 03:05:57,928 basehttp 22548 21416 "POST /my_app_02/new_item/ HTTP/1.1" 200 2536
+ERROR 2024-06-24 03:06:13,979 log 22548 21416 Internal Server Error: /my_app_02/new_item/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 94, in new_item
+    image_path = fs.save(item_image.name, item_image)
+AttributeError: 'NoneType' object has no attribute 'name'
+ERROR 2024-06-24 03:06:13,981 basehttp 22548 21416 "POST /my_app_02/new_item/ HTTP/1.1" 500 70082
+ERROR 2024-06-24 03:06:30,448 log 22548 21416 Internal Server Error: /my_app_02/new_item/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 94, in new_item
+    image_path = fs.save(item_image.name, item_image)
+AttributeError: 'NoneType' object has no attribute 'name'
+ERROR 2024-06-24 03:06:30,448 basehttp 22548 21416 "POST /my_app_02/new_item/ HTTP/1.1" 500 70082
+INFO 2024-06-24 03:06:53,210 autoreload 22548 22208 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 03:06:53,708 autoreload 24308 12844 Watching for file changes with StatReloader
+INFO 2024-06-24 03:07:02,861 basehttp 24308 5712 "POST /my_app_02/new_item/ HTTP/1.1" 200 2541
+INFO 2024-06-24 03:09:09,180 autoreload 24308 12844 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 03:09:09,682 autoreload 15324 21360 Watching for file changes with StatReloader
+INFO 2024-06-24 03:10:27,704 autoreload 18664 23732 Watching for file changes with StatReloader

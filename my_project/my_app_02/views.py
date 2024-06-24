@@ -1,10 +1,11 @@
 import logging
 from .models import *
 from django.shortcuts import render, get_object_or_404, redirect
-from .forms import CustomerForm
+from .forms import CustomerForm, ItemForm
 from django.utils import timezone
 from datetime import timedelta
 from django.contrib.auth.hashers import make_password
+from django.core.files.storage import FileSystemStorage
 
 logger = logging.getLogger(__name__)
 
@@ -78,6 +79,31 @@ def customer_orders_7_days(request, customer_id):
                'items_30_days': order_items_30_days,
                'items_365_days': order_items_365_days}
     return render(request, 'my_app_02/orders.html', context)
+
+
+def new_item(request):
+    if request.method == 'POST':
+        form = ItemForm(request.POST, request.FILES)
+        if form.is_valid():
+            item_name = form.cleaned_data['item_name']
+            item_description = form.cleaned_data['item_description']
+            item_price = form.cleaned_data['item_price']
+            item_quantity = form.cleaned_data['item_quantity']
+            item_image = form.cleaned_data['item_image']
+            fs = FileSystemStorage()
+            image_path = fs.save(item_image.name, item_image)
+            item = Item(item_name=item_name, item_description=item_description,
+                        item_price=item_price, item_quantity=item_quantity,
+                        item_image=image_path)
+            item.save()
+            form = ItemForm()
+    else:
+        form = ItemForm()
+    context = {
+        'title': 'Новый товар',
+        'form': form,
+    }
+    return render(request, 'my_app_02/new_item.html', context)
 
 
 def page_not_found(request, exception):
