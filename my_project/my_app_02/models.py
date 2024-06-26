@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.core.exceptions import ValidationError
@@ -18,18 +19,14 @@ class Customer(models.Model):
 class Item(models.Model):
     item_name = models.CharField(max_length=128)
     item_description = models.TextField(default=None)
-    item_price = models.DecimalField(max_digits=8, decimal_places=2)
+    item_price = models.DecimalField(max_digits=8, decimal_places=2,
+                                     validators=[MinValueValidator(0.01)])
     item_quantity = models.PositiveIntegerField()
     item_image = models.ImageField(default=None)
     item_addition_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
         return f'{self.item_name} ({self.item_price} рублей)'
-
-    def save(self, *args, **kwargs):
-        if self.item_price <= 0:
-            raise ValidationError('Цена товара должна быть положительной')
-        super(Item, self).save(*args, **kwargs)
 
 
 class Order(models.Model):
