@@ -3049,3 +3049,7 @@ INFO 2024-06-26 13:13:53,219 basehttp 31308 27992 "GET /static/my_app_02/images/
 INFO 2024-06-26 13:13:53,224 basehttp 31308 7200 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
 INFO 2024-06-26 13:13:53,241 basehttp 31308 21472 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
 INFO 2024-06-26 13:13:53,257 basehttp 31308 10028 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-26 13:14:13,162 basehttp 31308 10028 "GET /my_app_02/new_item HTTP/1.1" 301 0
+INFO 2024-06-26 13:14:13,178 basehttp 31308 21472 "GET /my_app_02/new_item/ HTTP/1.1" 200 2432
+INFO 2024-06-26 13:14:51,920 basehttp 31308 21472 "POST /my_app_02/new_item/ HTTP/1.1" 200 2631
+INFO 2024-06-26 13:14:51,930 basehttp 31308 21472 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
