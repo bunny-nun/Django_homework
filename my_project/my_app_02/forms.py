@@ -42,3 +42,10 @@ class ItemForm(forms.Form):
         label='')
     item_image = forms.ImageField(widget=forms.FileInput(
         attrs={'class': 'form-control placeholder'}))
+
+    def clean_item_price(self):
+        item_price = self.cleaned_data.get('item_price')
+        if item_price <= 0:
+            raise forms.ValidationError('Цена товара должна '
+                                        'быть положительной')
+        return item_price

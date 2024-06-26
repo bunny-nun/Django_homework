@@ -3030,3 +3030,22 @@ INFO 2024-06-24 03:09:09,180 autoreload 24308 12844 D:\STUDY\homework_01\my_proj
 INFO 2024-06-24 03:09:09,682 autoreload 15324 21360 Watching for file changes with StatReloader
 INFO 2024-06-24 03:10:27,704 autoreload 18664 23732 Watching for file changes with StatReloader
 INFO 2024-06-24 03:11:11,720 basehttp 18664 24224 "POST /my_app_02/new_item/ HTTP/1.1" 200 2432
+INFO 2024-06-26 13:13:50,776 autoreload 31308 27024 Watching for file changes with StatReloader
+INFO 2024-06-26 13:13:52,888 basehttp 31308 17292 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-26 13:13:52,906 basehttp 31308 10028 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,080 basehttp 31308 15176 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-26 13:13:53,084 basehttp 31308 15176 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-26 13:13:53,086 basehttp 31308 15176 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-26 13:13:53,097 basehttp 31308 15176 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-26 13:13:53,101 basehttp 31308 15176 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-26 13:13:53,106 basehttp 31308 15176 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-26 13:13:53,112 basehttp 31308 15176 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-26 13:13:53,130 basehttp 31308 17292 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10962
+INFO 2024-06-26 13:13:53,171 basehttp 31308 17292 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,172 basehttp 31308 15176 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,174 basehttp 31308 15176 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,175 basehttp 31308 17292 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,219 basehttp 31308 27992 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-26 13:13:53,224 basehttp 31308 7200 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-26 13:13:53,241 basehttp 31308 21472 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-26 13:13:53,257 basehttp 31308 10028 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
