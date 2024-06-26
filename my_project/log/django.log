@@ -2474,3 +2474,559 @@ INFO 2024-06-23 15:32:08,859 autoreload 23868 10728 Watching for file changes wi
 INFO 2024-06-23 15:32:15,737 basehttp 23868 23384 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18935
 INFO 2024-06-23 15:32:15,747 basehttp 23868 23384 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
 INFO 2024-06-23 15:32:46,995 autoreload 24320 14252 Watching for file changes with StatReloader
+INFO 2024-06-23 22:27:53,372 autoreload 9116 19980 Watching for file changes with StatReloader
+ERROR 2024-06-23 22:27:55,053 log 9116 12008 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 502, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 11, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'. Did you forget to register or load this tag?
+ERROR 2024-06-23 22:27:55,053 basehttp 9116 12008 "GET / HTTP/1.1" 500 191842
+WARNING 2024-06-23 22:27:55,257 log 9116 12008 Not Found: /favicon.ico
+WARNING 2024-06-23 22:27:55,257 basehttp 9116 12008 "GET /favicon.ico HTTP/1.1" 404 2431
+INFO 2024-06-23 22:28:52,884 autoreload 1744 18520 Watching for file changes with StatReloader
+ERROR 2024-06-23 22:28:55,591 log 1744 2448 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "request.path|startswith:'/my_app_02/top/'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 11, in index
+    return render(request, 'my_app_02/index.html', context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 960, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 893, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 896, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 693, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 603, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'startswith'
+ERROR 2024-06-23 22:28:55,596 basehttp 1744 2448 "GET / HTTP/1.1" 500 229466
+INFO 2024-06-23 22:29:29,626 autoreload 9704 21252 Watching for file changes with StatReloader
+INFO 2024-06-23 22:29:31,719 basehttp 9704 13976 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-23 22:29:32,000 basehttp 9704 14296 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-23 22:29:32,000 basehttp 9704 14296 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-23 22:29:32,004 basehttp 9704 14296 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-23 22:29:32,010 basehttp 9704 14296 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-23 22:29:32,020 basehttp 9704 13976 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10986
+INFO 2024-06-23 22:29:32,020 basehttp 9704 13984 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-23 22:29:32,033 basehttp 9704 13976 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-23 22:29:32,034 basehttp 9704 14296 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-23 22:29:32,034 basehttp 9704 13984 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-23 22:29:32,038 basehttp 9704 13976 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-23 22:29:32,046 basehttp 9704 8152 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-23 22:29:32,065 basehttp 9704 12900 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-23 22:29:32,074 basehttp 9704 20584 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-23 22:29:32,081 basehttp 9704 8152 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-23 22:29:32,081 basehttp 9704 20584 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-23 22:29:32,081 basehttp 9704 12900 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-23 22:29:32,081 basehttp 9704 13976 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+WARNING 2024-06-23 22:29:36,519 log 9704 8152 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 22:29:36,522 basehttp 9704 8152 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 22:29:38,951 basehttp 9704 8152 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18717
+INFO 2024-06-23 22:29:48,527 basehttp 9704 8152 "GET / HTTP/1.1" 200 5555
+WARNING 2024-06-23 22:30:04,644 log 9704 8152 Not Found: /my_app_02/top/
+WARNING 2024-06-23 22:30:04,644 basehttp 9704 8152 "GET /my_app_02/top/ HTTP/1.1" 404 2704
+WARNING 2024-06-23 22:30:07,070 log 9704 8152 Not Found: /my_app_02/pants/
+WARNING 2024-06-23 22:30:07,071 basehttp 9704 8152 "GET /my_app_02/pants/ HTTP/1.1" 404 2710
+WARNING 2024-06-23 22:30:09,365 log 9704 8152 Not Found: /my_app_02/shoes/
+WARNING 2024-06-23 22:30:09,365 basehttp 9704 8152 "GET /my_app_02/shoes/ HTTP/1.1" 404 2710
+WARNING 2024-06-23 22:30:11,405 log 9704 8152 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 22:30:11,405 basehttp 9704 8152 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+WARNING 2024-06-23 22:30:33,607 log 9704 8152 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 22:30:33,608 basehttp 9704 8152 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 22:30:37,199 basehttp 9704 8152 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18717
+INFO 2024-06-23 22:32:05,745 autoreload 9544 6456 Watching for file changes with StatReloader
+INFO 2024-06-23 22:32:08,728 basehttp 9544 15876 "GET / HTTP/1.1" 200 5555
+WARNING 2024-06-23 22:32:10,954 log 9544 15876 Not Found: /my_app_02/top/
+WARNING 2024-06-23 22:32:10,955 basehttp 9544 15876 "GET /my_app_02/top/ HTTP/1.1" 404 2704
+WARNING 2024-06-23 22:32:13,513 log 9544 15876 Not Found: /my_app_02/orders/
+WARNING 2024-06-23 22:32:13,513 basehttp 9544 15876 "GET /my_app_02/orders/ HTTP/1.1" 404 2713
+INFO 2024-06-23 22:32:16,353 basehttp 9544 15876 "GET /my_app_02/orders/11/ HTTP/1.1" 200 12997
+INFO 2024-06-23 22:32:22,761 basehttp 9544 15876 "GET /my_app_02/orders/1/ HTTP/1.1" 200 12996
+INFO 2024-06-23 22:33:34,289 autoreload 9544 6456 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-23 22:33:34,983 autoreload 10452 9428 Watching for file changes with StatReloader
+INFO 2024-06-24 00:31:21,348 autoreload 6616 21364 Watching for file changes with StatReloader
+INFO 2024-06-24 00:33:36,647 autoreload 11100 14076 Watching for file changes with StatReloader
+INFO 2024-06-24 00:33:38,406 basehttp 11100 5728 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-24 00:33:38,424 basehttp 11100 5728 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,427 basehttp 11100 19888 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,428 basehttp 11100 5728 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,434 basehttp 11100 5728 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,435 basehttp 11100 19888 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,437 basehttp 11100 16116 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,441 basehttp 11100 22248 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,442 basehttp 11100 14228 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,442 basehttp 11100 19652 "GET /static/my_app_02/images/top.png HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,443 basehttp 11100 19888 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,443 basehttp 11100 5728 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,447 basehttp 11100 14228 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,447 basehttp 11100 19652 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,481 basehttp 11100 14228 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,481 basehttp 11100 19888 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,481 basehttp 11100 19652 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:38,481 basehttp 11100 5728 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 00:33:45,538 basehttp 11100 5728 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18717
+WARNING 2024-06-24 00:33:53,982 log 11100 5728 Not Found: /my_app_02/register
+WARNING 2024-06-24 00:33:53,982 basehttp 11100 5728 "GET /my_app_02/register HTTP/1.1" 404 2716
+INFO 2024-06-24 00:34:37,067 autoreload 11100 14076 D:\STUDY\homework_01\my_project\my_app_02\urls.py changed, reloading.
+INFO 2024-06-24 00:34:37,547 autoreload 22200 14556 Watching for file changes with StatReloader
+INFO 2024-06-24 00:35:42,900 autoreload 24548 17136 Watching for file changes with StatReloader
+INFO 2024-06-24 00:35:45,574 basehttp 24548 13508 "GET /my_app_02/register HTTP/1.1" 301 0
+ERROR 2024-06-24 00:35:45,604 log 24548 6356 Internal Server Error: /my_app_02/register/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view my_app_02.views.register didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-06-24 00:35:45,606 basehttp 24548 6356 "GET /my_app_02/register/ HTTP/1.1" 500 67388
+INFO 2024-06-24 00:38:27,427 autoreload 24548 17136 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 00:38:28,016 autoreload 14024 14040 Watching for file changes with StatReloader
+INFO 2024-06-24 00:39:55,018 autoreload 14024 14040 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 00:39:55,601 autoreload 12480 18808 Watching for file changes with StatReloader
+INFO 2024-06-24 00:40:15,816 autoreload 12480 18808 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 00:40:16,275 autoreload 23240 22236 Watching for file changes with StatReloader
+INFO 2024-06-24 00:40:19,511 basehttp 23240 10016 "GET /my_app_02/register/ HTTP/1.1" 200 2513
+INFO 2024-06-24 00:40:52,168 autoreload 22608 7372 Watching for file changes with StatReloader
+INFO 2024-06-24 00:40:54,797 basehttp 22608 23372 "GET /my_app_02/register/ HTTP/1.1" 200 2499
+INFO 2024-06-24 00:41:19,511 basehttp 22608 23372 "GET /my_app_02/register/ HTTP/1.1" 200 2490
+INFO 2024-06-24 00:41:25,549 autoreload 23104 23720 Watching for file changes with StatReloader
+INFO 2024-06-24 00:41:27,173 basehttp 23104 10048 "GET /my_app_02/register/ HTTP/1.1" 200 2490
+INFO 2024-06-24 00:42:18,837 autoreload 22712 22244 Watching for file changes with StatReloader
+INFO 2024-06-24 00:42:21,847 basehttp 22712 21800 "GET /my_app_02/register/ HTTP/1.1" 200 2510
+INFO 2024-06-24 00:45:39,219 basehttp 22712 21800 "GET /my_app_02/register/ HTTP/1.1" 200 2510
+INFO 2024-06-24 00:45:57,607 autoreload 13852 11848 Watching for file changes with StatReloader
+INFO 2024-06-24 00:45:59,855 basehttp 13852 7120 "GET /my_app_02/register/ HTTP/1.1" 200 2510
+INFO 2024-06-24 00:46:03,112 basehttp 13852 7120 "GET /my_app_02/register/ HTTP/1.1" 200 2510
+INFO 2024-06-24 00:57:31,261 autoreload 13852 11848 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 00:57:31,825 autoreload 23488 8560 Watching for file changes with StatReloader
+INFO 2024-06-24 00:57:35,554 basehttp 23488 2392 "GET /my_app_02/register/ HTTP/1.1" 200 2591
+INFO 2024-06-24 00:57:35,565 basehttp 23488 16720 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 00:57:35,623 basehttp 23488 2392 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10967
+INFO 2024-06-24 00:57:35,630 basehttp 23488 2392 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 00:57:35,632 basehttp 23488 16720 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 00:57:35,632 basehttp 23488 23572 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 00:57:35,633 basehttp 23488 9392 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 01:05:14,812 autoreload 23488 8560 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 01:05:15,284 autoreload 24112 24040 Watching for file changes with StatReloader
+INFO 2024-06-24 01:05:19,547 basehttp 24112 11924 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:05:19,617 basehttp 24112 11924 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10967
+INFO 2024-06-24 01:06:13,259 autoreload 22556 13364 Watching for file changes with StatReloader
+INFO 2024-06-24 01:06:15,334 basehttp 22556 23724 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:06:15,409 basehttp 22556 23724 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10986
+INFO 2024-06-24 01:06:25,178 autoreload 12836 21568 Watching for file changes with StatReloader
+INFO 2024-06-24 01:06:27,374 basehttp 12836 23672 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:06:27,438 basehttp 12836 23672 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10986
+INFO 2024-06-24 01:06:41,615 autoreload 24092 10956 Watching for file changes with StatReloader
+INFO 2024-06-24 01:06:43,812 basehttp 24092 23572 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:06:43,881 basehttp 24092 23572 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10986
+INFO 2024-06-24 01:06:52,189 basehttp 24092 23572 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 01:11:42,144 autoreload 22988 23148 Watching for file changes with StatReloader
+INFO 2024-06-24 01:11:47,462 basehttp 22988 23340 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:11:47,535 basehttp 22988 23340 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10991
+INFO 2024-06-24 01:12:01,287 basehttp 22988 23340 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 01:14:56,888 autoreload 24448 13856 Watching for file changes with StatReloader
+INFO 2024-06-24 01:14:59,303 basehttp 24448 3576 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:14:59,376 basehttp 24448 3576 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10991
+INFO 2024-06-24 01:15:07,873 autoreload 23816 6288 Watching for file changes with StatReloader
+INFO 2024-06-24 01:15:09,492 basehttp 23816 14924 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:15:09,562 basehttp 23816 14924 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10962
+INFO 2024-06-24 01:15:55,901 basehttp 23816 14924 "POST /my_app_02/register/ HTTP/1.1" 200 2473
+INFO 2024-06-24 01:15:55,914 basehttp 23816 14924 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 01:30:19,903 autoreload 23816 6288 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:30:20,428 autoreload 7828 9600 Watching for file changes with StatReloader
+INFO 2024-06-24 01:33:10,026 autoreload 7828 9600 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:33:10,627 autoreload 23896 13300 Watching for file changes with StatReloader
+INFO 2024-06-24 01:35:48,858 autoreload 23896 13300 D:\STUDY\homework_01\my_project\my_app_02\urls.py changed, reloading.
+INFO 2024-06-24 01:35:49,338 autoreload 24064 19020 Watching for file changes with StatReloader
+ERROR 2024-06-24 01:36:09,895 log 24064 13192 Internal Server Error: /my_app_02/register/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: my_app_02_customer.phone_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 34, in register
+    customer.save()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: my_app_02_customer.phone_number
+ERROR 2024-06-24 01:36:09,898 basehttp 24064 13192 "POST /my_app_02/register/ HTTP/1.1" 500 153345
+INFO 2024-06-24 01:36:19,611 basehttp 24064 13192 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:36:19,620 basehttp 24064 13192 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 01:36:19,622 basehttp 24064 23252 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 01:36:19,629 basehttp 24064 23252 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 01:36:19,629 basehttp 24064 4292 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 01:36:19,631 basehttp 24064 13192 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 01:36:19,631 basehttp 24064 16796 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+ERROR 2024-06-24 01:37:13,269 log 24064 16796 Internal Server Error: /my_app_02/register/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 34, in register
+    customer.save()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: database is locked
+ERROR 2024-06-24 01:37:13,270 basehttp 24064 16796 "POST /my_app_02/register/ HTTP/1.1" 500 129473
+INFO 2024-06-24 01:37:24,056 basehttp 24064 16796 "POST /my_app_02/register/ HTTP/1.1" 302 0
+INFO 2024-06-24 01:37:24,061 basehttp 24064 16796 "GET /my_app_02/registration_success/ HTTP/1.1" 200 1332
+INFO 2024-06-24 01:37:24,140 basehttp 24064 16796 "GET /static/my_app_02/images/reg.png HTTP/1.1" 200 1164707
+INFO 2024-06-24 01:38:07,922 basehttp 24064 16796 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:39:47,146 autoreload 24064 19020 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:39:47,742 autoreload 22548 22040 Watching for file changes with StatReloader
+INFO 2024-06-24 01:41:01,080 autoreload 22548 22040 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:41:01,608 autoreload 19224 3272 Watching for file changes with StatReloader
+INFO 2024-06-24 01:44:16,290 autoreload 19224 3272 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:44:16,802 autoreload 11044 22532 Watching for file changes with StatReloader
+INFO 2024-06-24 01:44:21,009 basehttp 11044 10896 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-24 01:44:21,026 basehttp 11044 10896 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,030 basehttp 11044 10896 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,033 basehttp 11044 8564 "GET /static/my_app_02/images/top.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,035 basehttp 11044 10016 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,037 basehttp 11044 13908 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,038 basehttp 11044 10896 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,040 basehttp 11044 11600 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,042 basehttp 11044 1128 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,043 basehttp 11044 10016 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,044 basehttp 11044 10896 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,044 basehttp 11044 8564 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:21,044 basehttp 11044 13908 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 304 0
+INFO 2024-06-24 01:44:25,491 basehttp 11044 13908 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18717
+INFO 2024-06-24 01:44:33,130 basehttp 11044 13908 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 01:45:22,035 basehttp 11044 13908 "POST /my_app_02/register/ HTTP/1.1" 302 0
+INFO 2024-06-24 01:45:22,040 basehttp 11044 13908 "GET /my_app_02/registration_success/ HTTP/1.1" 200 1335
+INFO 2024-06-24 01:45:22,055 basehttp 11044 13908 "GET /static/my_app_02/images/reg.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:45:26,981 basehttp 11044 13908 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-24 01:47:47,258 autoreload 11044 22532 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:47:47,774 autoreload 19564 4032 Watching for file changes with StatReloader
+INFO 2024-06-24 01:48:52,587 autoreload 19564 4032 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:48:53,141 autoreload 3868 2920 Watching for file changes with StatReloader
+INFO 2024-06-24 01:51:39,538 autoreload 3868 2920 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:51:40,022 autoreload 24104 15132 Watching for file changes with StatReloader
+INFO 2024-06-24 01:52:10,675 autoreload 24104 15132 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:52:11,198 autoreload 5680 14436 Watching for file changes with StatReloader
+INFO 2024-06-24 01:53:48,706 autoreload 5680 14436 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:53:49,216 autoreload 6028 2312 Watching for file changes with StatReloader
+INFO 2024-06-24 01:55:07,952 autoreload 6028 2312 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:55:08,453 autoreload 24104 23364 Watching for file changes with StatReloader
+INFO 2024-06-24 01:55:38,124 autoreload 24104 23364 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 01:55:38,669 autoreload 5924 9080 Watching for file changes with StatReloader
+INFO 2024-06-24 01:56:48,577 basehttp 5924 976 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18717
+INFO 2024-06-24 01:56:48,623 basehttp 5924 976 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 01:56:51,780 basehttp 5924 976 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+ERROR 2024-06-24 01:58:02,355 log 5924 976 Internal Server Error: /my_app_02/register/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 33, in register
+    customer.save()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: database is locked
+ERROR 2024-06-24 01:58:02,359 basehttp 5924 976 "POST /my_app_02/register/ HTTP/1.1" 500 129350
+INFO 2024-06-24 01:58:08,994 basehttp 5924 976 "POST /my_app_02/register/ HTTP/1.1" 302 0
+INFO 2024-06-24 01:58:08,998 basehttp 5924 976 "GET /my_app_02/registration_success/ HTTP/1.1" 200 1335
+INFO 2024-06-24 01:58:09,008 basehttp 5924 976 "GET /static/my_app_02/images/reg.png HTTP/1.1" 304 0
+INFO 2024-06-24 01:59:18,557 basehttp 5924 976 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-24 02:00:11,896 autoreload 5924 9080 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:00:12,640 autoreload 7444 15432 Watching for file changes with StatReloader
+INFO 2024-06-24 02:02:06,830 autoreload 7444 15432 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:02:07,357 autoreload 2996 8424 Watching for file changes with StatReloader
+INFO 2024-06-24 02:04:40,934 autoreload 2996 8424 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:04:41,468 autoreload 15556 14124 Watching for file changes with StatReloader
+INFO 2024-06-24 02:06:35,424 autoreload 15556 14124 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:06:35,994 autoreload 22040 22208 Watching for file changes with StatReloader
+INFO 2024-06-24 02:08:23,795 autoreload 21992 6252 Watching for file changes with StatReloader
+INFO 2024-06-24 02:08:32,772 basehttp 21992 8144 "GET /my_app_02/orders/5/ HTTP/1.1" 200 18717
+INFO 2024-06-24 02:08:32,820 basehttp 21992 8144 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,820 basehttp 21992 2956 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,833 basehttp 21992 2956 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,833 basehttp 21992 8144 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,833 basehttp 21992 15692 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:32,844 basehttp 21992 15692 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,297 basehttp 21992 15692 "GET /my_app_02/register/ HTTP/1.1" 200 2319
+INFO 2024-06-24 02:08:36,318 basehttp 21992 15692 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 15692 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 8144 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 2956 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:08:36,332 basehttp 21992 23624 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 02:09:34,460 autoreload 364 3316 Watching for file changes with StatReloader
+INFO 2024-06-24 02:09:37,680 basehttp 364 7044 "GET /my_app_02/register/ HTTP/1.1" 200 2371
+INFO 2024-06-24 02:10:59,721 autoreload 364 3316 D:\STUDY\homework_01\my_project\my_app_02\models.py changed, reloading.
+INFO 2024-06-24 02:11:00,312 autoreload 21976 15080 Watching for file changes with StatReloader
+INFO 2024-06-24 02:13:16,289 autoreload 21976 15080 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-24 02:13:16,819 autoreload 13128 15072 Watching for file changes with StatReloader
+INFO 2024-06-24 02:17:00,594 autoreload 13128 15072 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 02:17:01,150 autoreload 23940 19280 Watching for file changes with StatReloader
+INFO 2024-06-24 02:19:26,612 autoreload 23940 19280 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-24 02:19:27,178 autoreload 16676 22116 Watching for file changes with StatReloader
+INFO 2024-06-24 02:19:46,324 autoreload 16676 22116 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-24 02:19:46,809 autoreload 10056 22604 Watching for file changes with StatReloader
+INFO 2024-06-24 02:25:09,825 autoreload 10056 22604 D:\STUDY\homework_01\my_project\my_app_02\views.py changed, reloading.
+INFO 2024-06-24 02:25:10,402 autoreload 22252 6608 Watching for file changes with StatReloader
+INFO 2024-06-24 03:03:18,776 autoreload 3636 18544 Watching for file changes with StatReloader
+INFO 2024-06-24 03:03:20,006 basehttp 3636 15852 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-24 03:03:20,026 basehttp 3636 15852 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,027 basehttp 3636 23352 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,027 basehttp 3636 14040 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,035 basehttp 3636 23352 "GET /static/my_app_02/images/top.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,038 basehttp 3636 14040 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,042 basehttp 3636 14124 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,042 basehttp 3636 15852 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 11456 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 23352 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 14040 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,045 basehttp 3636 16476 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,048 basehttp 3636 15852 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,048 basehttp 3636 14124 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 15852 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 16476 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 14040 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:20,081 basehttp 3636 14124 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-24 03:03:45,833 basehttp 3636 14124 "GET /my_app_02/new_item HTTP/1.1" 301 0
+INFO 2024-06-24 03:03:45,843 basehttp 3636 14040 "GET /my_app_02/new_item/ HTTP/1.1" 200 2469
+INFO 2024-06-24 03:04:16,396 basehttp 3636 14040 "POST /my_app_02/new_item/ HTTP/1.1" 200 2545
+INFO 2024-06-24 03:05:54,306 autoreload 3636 18544 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 03:05:54,906 autoreload 22548 22208 Watching for file changes with StatReloader
+INFO 2024-06-24 03:05:57,928 basehttp 22548 21416 "POST /my_app_02/new_item/ HTTP/1.1" 200 2536
+ERROR 2024-06-24 03:06:13,979 log 22548 21416 Internal Server Error: /my_app_02/new_item/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 94, in new_item
+    image_path = fs.save(item_image.name, item_image)
+AttributeError: 'NoneType' object has no attribute 'name'
+ERROR 2024-06-24 03:06:13,981 basehttp 22548 21416 "POST /my_app_02/new_item/ HTTP/1.1" 500 70082
+ERROR 2024-06-24 03:06:30,448 log 22548 21416 Internal Server Error: /my_app_02/new_item/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 94, in new_item
+    image_path = fs.save(item_image.name, item_image)
+AttributeError: 'NoneType' object has no attribute 'name'
+ERROR 2024-06-24 03:06:30,448 basehttp 22548 21416 "POST /my_app_02/new_item/ HTTP/1.1" 500 70082
+INFO 2024-06-24 03:06:53,210 autoreload 22548 22208 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 03:06:53,708 autoreload 24308 12844 Watching for file changes with StatReloader
+INFO 2024-06-24 03:07:02,861 basehttp 24308 5712 "POST /my_app_02/new_item/ HTTP/1.1" 200 2541
+INFO 2024-06-24 03:09:09,180 autoreload 24308 12844 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-24 03:09:09,682 autoreload 15324 21360 Watching for file changes with StatReloader
+INFO 2024-06-24 03:10:27,704 autoreload 18664 23732 Watching for file changes with StatReloader
+INFO 2024-06-24 03:11:11,720 basehttp 18664 24224 "POST /my_app_02/new_item/ HTTP/1.1" 200 2432
