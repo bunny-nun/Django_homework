@@ -3712,3 +3712,19 @@ ERROR 2024-06-28 02:12:37,445 basehttp 26140 27768 "GET /admin/my_app_02/custome
 INFO 2024-06-28 02:12:39,584 basehttp 26140 27768 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
 INFO 2024-06-28 02:13:30,933 autoreload 26140 21904 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
 INFO 2024-06-28 02:13:31,608 autoreload 31608 27712 Watching for file changes with StatReloader
+INFO 2024-06-28 02:13:33,741 basehttp 31608 31044 "GET /admin/my_app_02/customer/1/change/ HTTP/1.1" 200 12601
+INFO 2024-06-28 02:13:33,759 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:42,491 basehttp 31608 31044 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15186
+INFO 2024-06-28 02:13:42,507 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:44,125 basehttp 31608 31044 "GET /admin/my_app_02/item/4/change/ HTTP/1.1" 200 12705
+INFO 2024-06-28 02:13:44,142 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:46,160 basehttp 31608 31044 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 15917
+INFO 2024-06-28 02:13:46,176 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:47,127 basehttp 31608 31044 "GET /admin/my_app_02/orderitem/96/change/ HTTP/1.1" 200 14237
+INFO 2024-06-28 02:13:47,144 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:50,128 basehttp 31608 31044 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15891
+INFO 2024-06-28 02:13:50,146 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:51,113 basehttp 31608 31044 "GET /admin/my_app_02/order/17/change/ HTTP/1.1" 200 13230
+INFO 2024-06-28 02:13:51,128 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:54,180 basehttp 31608 31044 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
+INFO 2024-06-28 02:13:54,195 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
