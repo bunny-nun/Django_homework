@@ -3728,3 +3728,228 @@ INFO 2024-06-28 02:13:51,113 basehttp 31608 31044 "GET /admin/my_app_02/order/17
 INFO 2024-06-28 02:13:51,128 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
 INFO 2024-06-28 02:13:54,180 basehttp 31608 31044 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
 INFO 2024-06-28 02:13:54,195 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:30:46,727 autoreload 15136 14216 Watching for file changes with StatReloader
+INFO 2024-06-28 02:30:48,312 basehttp 15136 29692 "GET / HTTP/1.1" 200 5555
+WARNING 2024-06-28 02:30:53,870 log 15136 29692 Not Found: /my_app_02/top/
+WARNING 2024-06-28 02:30:53,870 basehttp 15136 29692 "GET /my_app_02/top/ HTTP/1.1" 404 3281
+WARNING 2024-06-28 02:30:57,288 log 15136 29692 Not Found: /my_app_02/pants/
+WARNING 2024-06-28 02:30:57,290 basehttp 15136 29692 "GET /my_app_02/pants/ HTTP/1.1" 404 3287
+WARNING 2024-06-28 02:31:00,101 log 15136 29692 Not Found: /my_app_02/shoes/
+WARNING 2024-06-28 02:31:00,102 basehttp 15136 29692 "GET /my_app_02/shoes/ HTTP/1.1" 404 3287
+WARNING 2024-06-28 02:31:02,456 log 15136 29692 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:31:02,457 basehttp 15136 29692 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+WARNING 2024-06-28 02:31:43,359 log 15136 29692 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:31:43,360 basehttp 15136 29692 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+INFO 2024-06-28 02:31:47,956 basehttp 15136 29692 "GET /my_app_02/orders/2/ HTTP/1.1" 200 3888
+INFO 2024-06-28 02:31:56,860 basehttp 15136 29692 "GET /my_app_02/orders/11/ HTTP/1.1" 200 6454
+INFO 2024-06-28 02:32:05,803 basehttp 15136 29692 "GET /my_app_02/orders/15/ HTTP/1.1" 200 3907
+INFO 2024-06-28 02:32:13,188 basehttp 15136 29692 "GET /my_app_02/orders/14/ HTTP/1.1" 200 3907
+INFO 2024-06-28 02:32:17,454 basehttp 15136 29692 "GET /my_app_02/orders/13/ HTTP/1.1" 200 4199
+INFO 2024-06-28 02:32:25,326 basehttp 15136 29692 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-28 02:36:14,588 autoreload 17836 18396 Watching for file changes with StatReloader
+INFO 2024-06-28 02:36:16,210 basehttp 17836 18016 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:36:38,926 autoreload 9920 11792 Watching for file changes with StatReloader
+INFO 2024-06-28 02:36:39,949 basehttp 9920 27208 "GET / HTTP/1.1" 200 5845
+INFO 2024-06-28 02:37:48,330 autoreload 27088 27884 Watching for file changes with StatReloader
+INFO 2024-06-28 02:37:51,059 basehttp 27088 22132 "GET / HTTP/1.1" 200 5845
+INFO 2024-06-28 02:39:15,758 autoreload 23224 31608 Watching for file changes with StatReloader
+INFO 2024-06-28 02:39:26,015 basehttp 23224 14376 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:39:26,243 basehttp 23224 3696 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-28 02:39:26,247 basehttp 23224 3696 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-28 02:39:26,247 basehttp 23224 29356 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-28 02:39:26,253 basehttp 23224 29356 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-28 02:39:26,253 basehttp 23224 3696 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-28 02:39:26,258 basehttp 23224 14376 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10960
+INFO 2024-06-28 02:39:26,259 basehttp 23224 3696 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:26,265 basehttp 23224 3696 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-28 02:39:26,267 basehttp 23224 14376 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:26,275 basehttp 23224 29356 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-28 02:39:26,299 basehttp 23224 14376 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-28 02:39:26,300 basehttp 23224 29356 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-28 02:39:26,333 basehttp 23224 14376 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-28 02:39:26,334 basehttp 23224 29356 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+INFO 2024-06-28 02:39:26,349 basehttp 23224 15456 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-28 02:39:26,377 basehttp 23224 15596 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-28 02:39:26,408 basehttp 23224 24108 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+WARNING 2024-06-28 02:39:26,428 log 23224 24108 Not Found: /favicon.ico
+WARNING 2024-06-28 02:39:26,429 basehttp 23224 24108 "GET /favicon.ico HTTP/1.1" 404 2431
+INFO 2024-06-28 02:39:45,760 basehttp 23224 21616 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:39:45,772 basehttp 23224 21616 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10960
+INFO 2024-06-28 02:39:45,772 basehttp 23224 26204 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-28 02:39:45,774 basehttp 23224 8440 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-28 02:39:45,781 basehttp 23224 26204 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-28 02:39:45,782 basehttp 23224 21616 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-28 02:39:45,782 basehttp 23224 15376 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-28 02:39:45,782 basehttp 23224 22160 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-28 02:39:45,783 basehttp 23224 8440 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-28 02:39:45,792 basehttp 23224 21616 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:45,795 basehttp 23224 15376 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:45,795 basehttp 23224 26204 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-28 02:39:45,811 basehttp 23224 27528 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-28 02:39:45,813 basehttp 23224 22160 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-28 02:39:45,835 basehttp 23224 27528 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-28 02:39:45,835 basehttp 23224 22160 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-28 02:39:45,880 basehttp 23224 27528 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-28 02:39:45,880 basehttp 23224 22160 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+WARNING 2024-06-28 02:39:45,939 log 23224 27528 Not Found: /favicon.ico
+WARNING 2024-06-28 02:39:45,939 basehttp 23224 27528 "GET /favicon.ico HTTP/1.1" 404 2431
+INFO 2024-06-28 02:39:56,307 basehttp 23224 27528 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:39:56,312 basehttp 23224 27528 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:40:55,338 basehttp 23224 27528 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:40:55,343 basehttp 23224 27528 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:41:04,893 autoreload 4244 18008 Watching for file changes with StatReloader
+INFO 2024-06-28 02:41:06,455 basehttp 4244 1632 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:41:06,461 basehttp 4244 1632 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:41:12,482 basehttp 4244 1632 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:41:14,229 basehttp 4244 1632 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:41:29,874 autoreload 3700 29300 Watching for file changes with StatReloader
+INFO 2024-06-28 02:41:32,042 basehttp 3700 15064 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:41:32,048 basehttp 3700 15064 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:41:33,211 basehttp 3700 15064 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:41:37,169 basehttp 3700 15064 "GET / HTTP/1.1" 200 5843
+WARNING 2024-06-28 02:41:38,259 log 3700 15064 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:41:38,259 basehttp 3700 15064 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+INFO 2024-06-28 02:41:54,559 basehttp 3700 15064 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:41:54,564 basehttp 3700 15064 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:45:29,961 autoreload 24524 11192 Watching for file changes with StatReloader
+INFO 2024-06-28 02:45:38,140 basehttp 24524 12540 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:45:38,209 basehttp 24524 12540 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10986
+INFO 2024-06-28 02:46:01,377 autoreload 3048 16808 Watching for file changes with StatReloader
+INFO 2024-06-28 02:46:03,487 basehttp 3048 16916 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:46:03,492 basehttp 3048 16916 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:46:54,619 autoreload 30828 14288 Watching for file changes with StatReloader
+INFO 2024-06-28 02:46:56,278 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:46:56,351 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11010
+INFO 2024-06-28 02:47:07,778 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:07,784 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11009
+INFO 2024-06-28 02:47:31,118 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:31,122 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11011
+INFO 2024-06-28 02:47:37,618 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:37,623 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11010
+INFO 2024-06-28 02:47:43,413 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:43,419 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11010
+INFO 2024-06-28 02:47:49,500 basehttp 30828 15872 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:47:49,504 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+WARNING 2024-06-28 02:47:51,181 log 30828 15872 Not Found: /my_app_02/top/
+WARNING 2024-06-28 02:47:51,181 basehttp 30828 15872 "GET /my_app_02/top/ HTTP/1.1" 404 3281
+WARNING 2024-06-28 02:47:53,662 log 30828 15872 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:47:53,662 basehttp 30828 15872 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+INFO 2024-06-28 02:47:56,168 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:56,173 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:48:11,246 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:48:11,251 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:50:56,944 autoreload 30828 14288 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:50:57,539 autoreload 28068 14256 Watching for file changes with StatReloader
+INFO 2024-06-28 02:51:18,866 autoreload 28068 14256 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:51:19,419 autoreload 4812 25728 Watching for file changes with StatReloader
+INFO 2024-06-28 02:51:33,493 autoreload 4812 25728 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:51:34,418 autoreload 6156 31192 Watching for file changes with StatReloader
+INFO 2024-06-28 02:52:03,365 autoreload 6156 31192 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:52:03,999 autoreload 7444 15312 Watching for file changes with StatReloader
+INFO 2024-06-28 02:53:04,799 autoreload 7444 15312 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:53:05,441 autoreload 16232 11972 Watching for file changes with StatReloader
+ERROR 2024-06-28 02:53:15,439 log 16232 26904 Internal Server Error: /my_app_02/register/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\debug_toolbar\middleware.py", line 90, in __call__
+    rendered = toolbar.render_toolbar()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2024-06-28 02:53:15,443 basehttp 16232 26904 "GET /my_app_02/register/ HTTP/1.1" 500 137238
+INFO 2024-06-28 02:55:58,469 autoreload 16232 11972 D:\STUDY\homework_01\my_project\my_project\urls.py changed, reloading.
+INFO 2024-06-28 02:55:59,109 autoreload 16372 17796 Watching for file changes with StatReloader
+INFO 2024-06-28 02:56:05,600 basehttp 16372 17840 "GET /my_app_02/register/ HTTP/1.1" 200 16024
+INFO 2024-06-28 02:56:05,612 basehttp 16372 17840 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:56:05,613 basehttp 16372 7152 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 16630
+INFO 2024-06-28 02:56:05,613 basehttp 16372 30932 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14601
+INFO 2024-06-28 02:56:05,615 basehttp 16372 17840 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-06-28 02:56:05,618 basehttp 16372 17840 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4742
+INFO 2024-06-28 02:56:14,340 basehttp 16372 17840 "GET / HTTP/1.1" 200 19237
+INFO 2024-06-28 02:56:17,637 basehttp 16372 17840 "GET /my_app_02/register/ HTTP/1.1" 200 16024
+INFO 2024-06-28 02:56:24,499 basehttp 16372 17840 "GET / HTTP/1.1" 200 19237
+INFO 2024-06-28 02:57:44,482 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=HistoryPanel HTTP/1.1" 200 7445
+INFO 2024-06-28 02:57:44,486 basehttp 16372 17840 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-06-28 02:58:01,470 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=VersionsPanel HTTP/1.1" 200 888
+INFO 2024-06-28 02:58:15,290 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=SettingsPanel HTTP/1.1" 200 27157
+INFO 2024-06-28 02:58:30,355 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=HeadersPanel HTTP/1.1" 200 5309
+INFO 2024-06-28 02:58:56,622 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=RequestPanel HTTP/1.1" 200 1449
+INFO 2024-06-28 02:59:22,322 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=SQLPanel HTTP/1.1" 200 428
+WARNING 2024-06-28 02:59:33,432 log 16372 17840 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:59:33,432 basehttp 16372 17840 "GET /my_app_02/orders/ HTTP/1.1" 404 16783
+INFO 2024-06-28 02:59:33,437 basehttp 16372 17840 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:33,438 basehttp 16372 30932 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:33,439 basehttp 16372 30932 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:33,451 basehttp 16372 30932 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:37,728 basehttp 16372 30932 "GET /my_app_02/orders/13 HTTP/1.1" 301 0
+INFO 2024-06-28 02:59:37,927 basehttp 16372 17840 "GET /my_app_02/orders/13/ HTTP/1.1" 200 17915
+INFO 2024-06-28 02:59:37,931 basehttp 16372 17840 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:41,347 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=SQLPanel HTTP/1.1" 200 62335
+INFO 2024-06-28 02:59:55,783 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=StaticFilesPanel HTTP/1.1" 200 39350
+INFO 2024-06-28 03:00:22,985 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=TemplatesPanel HTTP/1.1" 200 9919
+INFO 2024-06-28 03:00:38,228 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=CachePanel HTTP/1.1" 200 1737
+INFO 2024-06-28 03:00:43,829 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=SignalsPanel HTTP/1.1" 200 2320
+INFO 2024-06-28 03:01:50,551 basehttp 16372 17840 "GET / HTTP/1.1" 200 19680
+INFO 2024-06-28 03:01:50,555 basehttp 16372 17840 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:01:53,844 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=e901785b2ca8446288d81a8be5169542&panel_id=ProfilingPanel HTTP/1.1" 200 37243
+WARNING 2024-06-28 03:21:20,088 log 16372 12868 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 03:21:20,088 basehttp 16372 12868 "GET /my_app_02/orders/ HTTP/1.1" 404 17226
+INFO 2024-06-28 03:21:20,097 basehttp 16372 12868 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:20,098 basehttp 16372 28892 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:20,102 basehttp 16372 29368 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:20,108 basehttp 16372 29368 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:23,831 basehttp 16372 29368 "GET /my_app_02/orders/8 HTTP/1.1" 200 14471
+INFO 2024-06-28 03:21:23,840 basehttp 16372 28892 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48
+INFO 2024-06-28 03:21:25,604 basehttp 16372 28892 "GET /my_app_02/orders/8/ HTTP/1.1" 200 18044
+INFO 2024-06-28 03:21:25,614 basehttp 16372 28892 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:41,984 basehttp 16372 28892 "GET /__debug__/render_panel/?store_id=4b0331450c1e40f992e00e1889f56b4f&panel_id=SQLPanel HTTP/1.1" 200 27748
+INFO 2024-06-28 03:29:37,263 autoreload 16372 17796 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:29:40,150 autoreload 28924 30704 Watching for file changes with StatReloader
+INFO 2024-06-28 03:30:02,947 autoreload 28924 30704 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:30:03,642 autoreload 3140 21172 Watching for file changes with StatReloader
+INFO 2024-06-28 03:30:41,162 autoreload 3140 21172 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:30:41,822 autoreload 29220 28252 Watching for file changes with StatReloader
+INFO 2024-06-28 03:31:15,158 autoreload 29220 28252 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:31:15,811 autoreload 10652 14436 Watching for file changes with StatReloader
+INFO 2024-06-28 03:31:40,712 autoreload 10652 14436 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:31:41,371 autoreload 7564 30304 Watching for file changes with StatReloader
+INFO 2024-06-28 03:32:00,969 autoreload 7564 30304 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:32:01,620 autoreload 1688 30768 Watching for file changes with StatReloader
+INFO 2024-06-28 03:32:08,463 autoreload 1688 30768 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:32:09,110 autoreload 31248 25172 Watching for file changes with StatReloader
+INFO 2024-06-28 03:33:50,395 autoreload 31248 25172 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:33:51,067 autoreload 384 17920 Watching for file changes with StatReloader
