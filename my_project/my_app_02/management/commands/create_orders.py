@@ -27,7 +27,7 @@ class Command(BaseCommand):
         items = Item.objects.all()
         count = kwargs['count']
 
-        for i in range(1, 16, 3):
+        for i in range(1, 5):
             item = items[i]
             quantity = count if item.item_quantity >= count else item.item_quantity
             order_item = OrderItem(

@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
@@ -17,7 +18,8 @@ class Customer(models.Model):
 class Item(models.Model):
     item_name = models.CharField(max_length=128)
     item_description = models.TextField(default=None)
-    item_price = models.DecimalField(max_digits=8, decimal_places=2)
+    item_price = models.DecimalField(max_digits=8, decimal_places=2,
+                                     validators=[MinValueValidator(0.01)])
     item_quantity = models.PositiveIntegerField()
     item_image = models.ImageField(default=None)
     item_addition_date = models.DateField(auto_now_add=True)
@@ -28,7 +30,7 @@ class Item(models.Model):
 
 class Order(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
-    total_amount = models.DecimalField(max_digits=8, decimal_places=2)
+    total_amount = models.DecimalField(max_digits=8, decimal_places=2, default=0)
     order_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

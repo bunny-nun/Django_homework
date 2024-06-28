@@ -3030,3 +3030,926 @@ INFO 2024-06-24 03:09:09,180 autoreload 24308 12844 D:\STUDY\homework_01\my_proj
 INFO 2024-06-24 03:09:09,682 autoreload 15324 21360 Watching for file changes with StatReloader
 INFO 2024-06-24 03:10:27,704 autoreload 18664 23732 Watching for file changes with StatReloader
 INFO 2024-06-24 03:11:11,720 basehttp 18664 24224 "POST /my_app_02/new_item/ HTTP/1.1" 200 2432
+INFO 2024-06-26 13:13:50,776 autoreload 31308 27024 Watching for file changes with StatReloader
+INFO 2024-06-26 13:13:52,888 basehttp 31308 17292 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-26 13:13:52,906 basehttp 31308 10028 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,080 basehttp 31308 15176 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-26 13:13:53,084 basehttp 31308 15176 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-26 13:13:53,086 basehttp 31308 15176 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-26 13:13:53,097 basehttp 31308 15176 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-26 13:13:53,101 basehttp 31308 15176 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-26 13:13:53,106 basehttp 31308 15176 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-26 13:13:53,112 basehttp 31308 15176 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-26 13:13:53,130 basehttp 31308 17292 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10962
+INFO 2024-06-26 13:13:53,171 basehttp 31308 17292 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,172 basehttp 31308 15176 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,174 basehttp 31308 15176 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,175 basehttp 31308 17292 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-26 13:13:53,219 basehttp 31308 27992 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-26 13:13:53,224 basehttp 31308 7200 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-26 13:13:53,241 basehttp 31308 21472 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-26 13:13:53,257 basehttp 31308 10028 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-26 13:14:13,162 basehttp 31308 10028 "GET /my_app_02/new_item HTTP/1.1" 301 0
+INFO 2024-06-26 13:14:13,178 basehttp 31308 21472 "GET /my_app_02/new_item/ HTTP/1.1" 200 2432
+INFO 2024-06-26 13:14:51,920 basehttp 31308 21472 "POST /my_app_02/new_item/ HTTP/1.1" 200 2631
+INFO 2024-06-26 13:14:51,930 basehttp 31308 21472 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-26 13:22:47,165 autoreload 26868 29044 Watching for file changes with StatReloader
+INFO 2024-06-26 13:22:48,747 basehttp 26868 20916 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-26 13:22:48,766 basehttp 26868 20916 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-26 13:22:54,753 basehttp 26868 20916 "POST /my_app_02/new_item/ HTTP/1.1" 200 2609
+INFO 2024-06-26 13:22:54,760 basehttp 26868 20916 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-26 13:23:25,536 autoreload 26868 29044 D:\STUDY\homework_01\my_project\my_app_02\forms.py changed, reloading.
+INFO 2024-06-26 13:23:26,049 autoreload 31124 17840 Watching for file changes with StatReloader
+INFO 2024-06-26 13:31:23,998 autoreload 28224 29848 Watching for file changes with StatReloader
+INFO 2024-06-26 13:31:31,058 basehttp 28224 17268 "POST /my_app_02/new_item/ HTTP/1.1" 200 2631
+INFO 2024-06-26 13:31:31,069 basehttp 28224 17268 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-26 13:33:14,910 autoreload 11768 21256 Watching for file changes with StatReloader
+ERROR 2024-06-26 13:33:24,407 log 11768 19716 Internal Server Error: /my_app_02/new_item/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\my_project\my_app_02\views.py", line 98, in new_item
+    item.save()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+django.db.utils.OperationalError: database is locked
+ERROR 2024-06-26 13:33:24,410 basehttp 11768 19716 "POST /my_app_02/new_item/ HTTP/1.1" 500 128850
+INFO 2024-06-26 13:33:33,526 basehttp 11768 19716 "POST /my_app_02/new_item/ HTTP/1.1" 200 2432
+INFO 2024-06-26 13:33:47,120 basehttp 11768 19716 "POST /my_app_02/new_item/ HTTP/1.1" 200 2432
+INFO 2024-06-28 00:54:02,679 autoreload 14728 21708 Watching for file changes with StatReloader
+INFO 2024-06-28 00:54:04,155 basehttp 14728 15000 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-28 00:54:04,180 basehttp 14728 15000 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 00:54:04,186 basehttp 14728 23424 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 304 0
+INFO 2024-06-28 00:54:04,476 basehttp 14728 9056 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-28 00:54:04,478 basehttp 14728 9056 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-28 00:54:04,480 basehttp 14728 9056 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 304 0
+INFO 2024-06-28 00:54:04,483 basehttp 14728 9056 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 304 0
+INFO 2024-06-28 00:54:04,486 basehttp 14728 9056 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 304 0
+INFO 2024-06-28 00:54:04,490 basehttp 14728 9056 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-28 00:54:04,501 basehttp 14728 9056 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-28 00:54:04,505 basehttp 14728 28340 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-28 00:54:04,507 basehttp 14728 9056 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 00:54:04,515 basehttp 14728 9056 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 00:54:04,517 basehttp 14728 28340 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-28 00:54:04,527 basehttp 14728 22676 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-28 00:54:04,535 basehttp 14728 26776 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-28 00:54:04,546 basehttp 14728 15000 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-28 00:54:04,548 basehttp 14728 23424 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-28 00:54:12,144 basehttp 14728 23424 "GET /admin HTTP/1.1" 301 0
+INFO 2024-06-28 00:54:12,155 basehttp 14728 15000 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-06-28 00:54:12,259 basehttp 14728 15000 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-06-28 00:54:12,281 basehttp 14728 28340 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-06-28 00:54:12,286 basehttp 14728 26776 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-06-28 00:54:12,288 basehttp 14728 22676 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-06-28 00:54:12,288 basehttp 14728 15000 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-06-28 00:54:12,288 basehttp 14728 9056 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-06-28 00:54:12,294 basehttp 14728 28340 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-06-28 00:54:12,296 basehttp 14728 22080 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-06-28 00:56:19,850 autoreload 14728 21708 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 00:56:20,484 autoreload 17872 23640 Watching for file changes with StatReloader
+INFO 2024-06-28 00:56:32,905 basehttp 17872 23352 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-06-28 00:58:50,265 autoreload 26960 30848 Watching for file changes with StatReloader
+INFO 2024-06-28 00:59:02,275 basehttp 26960 28656 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-06-28 00:59:02,319 basehttp 26960 28656 "GET /admin/ HTTP/1.1" 200 5944
+INFO 2024-06-28 00:59:02,408 basehttp 26960 28656 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-06-28 00:59:02,414 basehttp 26960 28656 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-06-28 00:59:02,414 basehttp 26960 28816 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-06-28 01:02:38,990 basehttp 26960 28816 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-28 01:03:58,084 basehttp 26960 28816 "GET /admin/auth/user/ HTTP/1.1" 200 11915
+INFO 2024-06-28 01:03:58,097 basehttp 26960 28816 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-06-28 01:03:58,107 basehttp 26960 28816 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-06-28 01:03:58,108 basehttp 26960 24936 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-06-28 01:03:58,110 basehttp 26960 27504 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-06-28 01:03:58,114 basehttp 26960 26420 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-06-28 01:03:58,116 basehttp 26960 28656 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:03:58,117 basehttp 26960 28816 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-06-28 01:03:58,118 basehttp 26960 24936 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-06-28 01:03:58,121 basehttp 26960 26420 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-06-28 01:03:58,121 basehttp 26960 28656 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-06-28 01:03:58,123 basehttp 26960 31268 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-06-28 01:03:58,125 basehttp 26960 27504 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-06-28 01:03:58,129 basehttp 26960 27504 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-06-28 01:03:58,148 basehttp 26960 27504 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-06-28 01:03:58,148 basehttp 26960 31268 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-06-28 01:03:58,148 basehttp 26960 28656 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-06-28 01:07:24,823 basehttp 26960 31268 "GET /admin/auth/user/1/change/ HTTP/1.1" 200 23853
+INFO 2024-06-28 01:07:24,836 basehttp 26960 31268 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-06-28 01:07:24,843 basehttp 26960 26420 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2024-06-28 01:07:24,844 basehttp 26960 31268 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-06-28 01:07:24,844 basehttp 26960 28656 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-06-28 01:07:24,846 basehttp 26960 27504 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-06-28 01:07:24,846 basehttp 26960 28816 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+INFO 2024-06-28 01:07:24,850 basehttp 26960 26420 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-06-28 01:07:24,850 basehttp 26960 24936 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:07:24,854 basehttp 26960 24936 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-06-28 01:07:24,903 basehttp 26960 31268 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-06-28 01:07:24,903 basehttp 26960 24936 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-06-28 01:07:24,903 basehttp 26960 28816 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-06-28 01:07:24,903 basehttp 26960 26420 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-06-28 01:07:24,903 basehttp 26960 27504 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-06-28 01:09:46,939 basehttp 26960 27504 "POST /admin/auth/user/1/change/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:09:46,953 basehttp 26960 27504 "GET /admin/auth/user/ HTTP/1.1" 200 12136
+INFO 2024-06-28 01:09:46,970 basehttp 26960 27504 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:09:56,498 basehttp 26960 27504 "GET /admin/ HTTP/1.1" 200 6342
+INFO 2024-06-28 01:16:20,302 autoreload 17436 25300 Watching for file changes with StatReloader
+INFO 2024-06-28 01:16:31,428 basehttp 17436 8040 "GET /admin/ HTTP/1.1" 200 8412
+INFO 2024-06-28 01:16:37,379 basehttp 17436 8040 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 15682
+INFO 2024-06-28 01:16:37,394 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:16:43,290 basehttp 17436 8040 "GET /admin/my_app_02/customer/16/change/ HTTP/1.1" 200 12869
+INFO 2024-06-28 01:16:43,311 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:16:51,606 basehttp 17436 8040 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 15682
+INFO 2024-06-28 01:17:07,289 basehttp 17436 8040 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 8934
+INFO 2024-06-28 01:17:07,307 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:17:10,573 basehttp 17436 8040 "GET /admin/my_app_02/order/ HTTP/1.1" 200 13729
+INFO 2024-06-28 01:17:10,588 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:17:13,183 basehttp 17436 8040 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 8934
+INFO 2024-06-28 01:17:13,199 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:17:16,229 basehttp 17436 8040 "GET /admin/my_app_02/order/ HTTP/1.1" 200 13729
+INFO 2024-06-28 01:17:16,246 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:17:20,229 basehttp 17436 8040 "GET /admin/my_app_02/item/ HTTP/1.1" 200 12355
+INFO 2024-06-28 01:17:20,246 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:17:25,555 basehttp 17436 8040 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 8934
+INFO 2024-06-28 01:17:25,572 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:17:26,936 basehttp 17436 8040 "GET /admin/my_app_02/order/ HTTP/1.1" 200 13729
+INFO 2024-06-28 01:17:26,951 basehttp 17436 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:21:07,102 autoreload 21608 30524 Watching for file changes with StatReloader
+INFO 2024-06-28 01:21:12,003 basehttp 21608 22244 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15416
+INFO 2024-06-28 01:21:12,020 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:21:13,787 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 13756
+INFO 2024-06-28 01:21:13,807 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:21:16,113 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/95/change/ HTTP/1.1" 200 14967
+INFO 2024-06-28 01:21:16,132 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:21:49,593 basehttp 21608 22244 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15416
+INFO 2024-06-28 01:21:49,611 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:21:50,914 basehttp 21608 22244 "GET /admin/my_app_02/order/16/change/ HTTP/1.1" 200 12666
+INFO 2024-06-28 01:21:50,933 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:22:26,680 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 12355
+INFO 2024-06-28 01:22:26,698 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:22:28,380 basehttp 21608 22244 "GET /admin/my_app_02/item/6/change/ HTTP/1.1" 200 12889
+INFO 2024-06-28 01:22:28,395 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING 2024-06-28 01:22:32,228 log 21608 22244 Not Found: /media/question_zK4N2i3.png
+WARNING 2024-06-28 01:22:32,229 basehttp 21608 22244 "GET /media/question_zK4N2i3.png HTTP/1.1" 404 2476
+INFO 2024-06-28 01:22:34,123 basehttp 21608 22244 "GET /admin/my_app_02/item/6/change/ HTTP/1.1" 200 12889
+INFO 2024-06-28 01:22:47,122 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 12355
+INFO 2024-06-28 01:22:47,138 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:22:59,139 basehttp 21608 22244 "POST /admin/my_app_02/item/ HTTP/1.1" 200 9103
+INFO 2024-06-28 01:22:59,218 basehttp 21608 22244 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2024-06-28 01:23:04,453 basehttp 21608 22244 "POST /admin/my_app_02/item/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:23:04,467 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 12120
+INFO 2024-06-28 01:23:04,485 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:14,801 basehttp 21608 22244 "POST /admin/my_app_02/item/ HTTP/1.1" 200 9105
+INFO 2024-06-28 01:23:15,932 basehttp 21608 22244 "POST /admin/my_app_02/item/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:23:15,947 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11738
+INFO 2024-06-28 01:23:15,966 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:19,826 basehttp 21608 22244 "GET /admin/my_app_02/item/2/change/ HTTP/1.1" 200 12873
+INFO 2024-06-28 01:23:19,842 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:21,879 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11595
+INFO 2024-06-28 01:23:23,510 basehttp 21608 22244 "GET /admin/my_app_02/item/3/change/ HTTP/1.1" 200 12863
+INFO 2024-06-28 01:23:23,527 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:25,882 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11595
+INFO 2024-06-28 01:23:26,957 basehttp 21608 22244 "GET /admin/my_app_02/item/5/change/ HTTP/1.1" 200 12889
+INFO 2024-06-28 01:23:26,977 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:29,395 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11595
+INFO 2024-06-28 01:23:30,834 basehttp 21608 22244 "GET /admin/my_app_02/item/3/change/ HTTP/1.1" 200 12863
+INFO 2024-06-28 01:23:30,855 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:38,872 basehttp 21608 22244 "POST /admin/my_app_02/item/3/change/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:23:38,884 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11828
+INFO 2024-06-28 01:23:38,903 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:40,716 basehttp 21608 22244 "GET /admin/my_app_02/item/5/change/ HTTP/1.1" 200 12889
+INFO 2024-06-28 01:23:40,731 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:23:45,308 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11595
+INFO 2024-06-28 01:23:45,325 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:24:43,218 basehttp 21608 22244 "GET /admin/my_app_02/order/add/ HTTP/1.1" 200 12301
+INFO 2024-06-28 01:24:43,232 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:00,839 basehttp 21608 22244 "POST /admin/my_app_02/order/add/ HTTP/1.1" 200 12507
+INFO 2024-06-28 01:25:00,857 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:04,555 basehttp 21608 22244 "POST /admin/my_app_02/order/add/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:25:04,569 basehttp 21608 22244 "GET /admin/my_app_02/order/ HTTP/1.1" 200 16091
+INFO 2024-06-28 01:25:04,585 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:07,283 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 13756
+INFO 2024-06-28 01:25:07,301 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:12,819 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/add/ HTTP/1.1" 200 14660
+INFO 2024-06-28 01:25:12,834 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:23,994 basehttp 21608 22244 "POST /admin/my_app_02/orderitem/add/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:25:24,010 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14351
+INFO 2024-06-28 01:25:24,027 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:26,765 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/96/change/ HTTP/1.1" 200 14923
+INFO 2024-06-28 01:25:26,781 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:41,406 basehttp 21608 22244 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15837
+INFO 2024-06-28 01:25:41,423 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:42,895 basehttp 21608 22244 "GET /admin/my_app_02/order/17/change/ HTTP/1.1" 200 12661
+INFO 2024-06-28 01:25:42,911 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:46,595 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:25:46,614 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:47,857 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/96/change/ HTTP/1.1" 200 14923
+INFO 2024-06-28 01:25:47,872 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:53,076 basehttp 21608 22244 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15837
+INFO 2024-06-28 01:25:53,093 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:25:54,275 basehttp 21608 22244 "GET /admin/my_app_02/order/17/change/ HTTP/1.1" 200 12661
+INFO 2024-06-28 01:25:54,291 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:00,492 basehttp 21608 22244 "POST /admin/my_app_02/order/17/change/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:26:00,507 basehttp 21608 22244 "GET /admin/my_app_02/order/ HTTP/1.1" 200 16093
+INFO 2024-06-28 01:26:00,528 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:02,106 basehttp 21608 22244 "GET /admin/my_app_02/order/17/change/ HTTP/1.1" 200 12665
+INFO 2024-06-28 01:26:02,120 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:04,803 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:26:04,820 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:05,917 basehttp 21608 22244 "GET /admin/my_app_02/orderitem/96/change/ HTTP/1.1" 200 14923
+INFO 2024-06-28 01:26:05,936 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:09,646 basehttp 21608 22244 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11595
+INFO 2024-06-28 01:26:09,662 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:10,373 basehttp 21608 22244 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 15682
+INFO 2024-06-28 01:26:10,389 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:14,106 basehttp 21608 22244 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15837
+INFO 2024-06-28 01:26:14,122 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:15,159 basehttp 21608 22244 "GET /admin/my_app_02/order/17/change/ HTTP/1.1" 200 12665
+INFO 2024-06-28 01:26:15,175 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:20,960 basehttp 21608 22244 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 15682
+INFO 2024-06-28 01:26:20,979 basehttp 21608 22244 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:26:23,208 basehttp 21608 22244 "GET /admin/ HTTP/1.1" 200 10653
+INFO 2024-06-28 01:26:23,226 basehttp 21608 22244 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-06-28 01:30:28,385 autoreload 25864 2800 Watching for file changes with StatReloader
+INFO 2024-06-28 01:30:32,390 basehttp 25864 27196 "GET /admin/ HTTP/1.1" 200 10653
+INFO 2024-06-28 01:30:35,513 basehttp 25864 27196 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15837
+INFO 2024-06-28 01:30:35,534 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:30:37,799 basehttp 25864 27196 "GET /admin/my_app_02/order/add/ HTTP/1.1" 200 12311
+INFO 2024-06-28 01:30:37,816 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:30:54,298 basehttp 25864 27196 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15837
+INFO 2024-06-28 01:30:54,313 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:30:57,165 basehttp 25864 27196 "GET /admin/my_app_02/order/17/change/ HTTP/1.1" 200 12665
+INFO 2024-06-28 01:30:57,180 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:31:05,387 basehttp 25864 27196 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15837
+INFO 2024-06-28 01:31:05,406 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:31:17,631 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:31:17,648 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:31:20,631 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/86/change/ HTTP/1.1" 200 14923
+INFO 2024-06-28 01:31:20,650 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:31:24,939 basehttp 25864 27196 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15837
+INFO 2024-06-28 01:31:24,955 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:31:37,356 basehttp 25864 27196 "POST /admin/my_app_02/order/ HTTP/1.1" 200 10528
+INFO 2024-06-28 01:31:39,047 basehttp 25864 27196 "POST /admin/my_app_02/order/ HTTP/1.1" 302 0
+INFO 2024-06-28 01:31:39,060 basehttp 25864 27196 "GET /admin/my_app_02/order/ HTTP/1.1" 200 12330
+INFO 2024-06-28 01:31:39,079 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:31:48,752 basehttp 25864 27196 "GET /admin/my_app_02/item/ HTTP/1.1" 200 11595
+INFO 2024-06-28 01:31:48,769 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:31:55,794 basehttp 25864 27196 "GET /admin/my_app_02/ HTTP/1.1" 200 6805
+INFO 2024-06-28 01:33:02,007 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:33:02,025 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:03,368 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/96/change/ HTTP/1.1" 200 14237
+INFO 2024-06-28 01:33:03,386 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:07,372 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:33:07,392 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:08,527 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/95/change/ HTTP/1.1" 200 14237
+INFO 2024-06-28 01:33:08,545 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:13,874 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:33:13,891 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:15,128 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/94/change/ HTTP/1.1" 200 14237
+INFO 2024-06-28 01:33:15,145 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:19,974 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:33:19,993 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:21,160 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/93/change/ HTTP/1.1" 200 14237
+INFO 2024-06-28 01:33:21,176 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:33:22,923 basehttp 25864 27196 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:33:22,940 basehttp 25864 27196 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:36:58,694 autoreload 25864 2800 D:\STUDY\homework_01\my_project\my_app_02\models.py changed, reloading.
+INFO 2024-06-28 01:36:59,297 autoreload 6236 31096 Watching for file changes with StatReloader
+INFO 2024-06-28 01:38:36,083 autoreload 6236 31096 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:38:36,736 autoreload 20196 21252 Watching for file changes with StatReloader
+INFO 2024-06-28 01:38:56,051 autoreload 20196 21252 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:38:56,715 autoreload 21968 28760 Watching for file changes with StatReloader
+INFO 2024-06-28 01:39:26,888 autoreload 4664 26140 Watching for file changes with StatReloader
+INFO 2024-06-28 01:39:32,128 basehttp 4664 18388 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 14119
+INFO 2024-06-28 01:39:32,142 basehttp 4664 18388 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:39:37,159 basehttp 4664 18388 "GET /admin/my_app_02/ HTTP/1.1" 200 6805
+INFO 2024-06-28 01:39:38,750 basehttp 4664 18388 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 18840
+INFO 2024-06-28 01:39:38,766 basehttp 4664 18388 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:41:44,082 autoreload 4664 26140 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:41:44,681 autoreload 8564 29440 Watching for file changes with StatReloader
+INFO 2024-06-28 01:41:49,269 basehttp 8564 9816 "GET /admin/ HTTP/1.1" 200 11588
+INFO 2024-06-28 01:41:51,302 basehttp 8564 9816 "GET /admin/my_app_02/item/ HTTP/1.1" 200 12591
+INFO 2024-06-28 01:41:51,320 basehttp 8564 9816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:42:06,154 basehttp 8564 9816 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 19667
+INFO 2024-06-28 01:42:06,169 basehttp 8564 9816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:44:49,998 autoreload 8564 29440 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:44:50,615 autoreload 23640 2268 Watching for file changes with StatReloader
+INFO 2024-06-28 01:44:54,542 basehttp 23640 18320 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 19667
+INFO 2024-06-28 01:44:54,557 basehttp 23640 18320 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:44:55,643 basehttp 23640 18320 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 15917
+INFO 2024-06-28 01:44:55,662 basehttp 23640 18320 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:45:00,461 basehttp 23640 18320 "GET /admin/my_app_02/order/ HTTP/1.1" 200 12906
+INFO 2024-06-28 01:45:00,479 basehttp 23640 18320 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:47:09,633 autoreload 23640 2268 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:47:10,230 autoreload 30896 17216 Watching for file changes with StatReloader
+INFO 2024-06-28 01:47:31,596 autoreload 30896 17216 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:47:32,451 autoreload 27628 28320 Watching for file changes with StatReloader
+INFO 2024-06-28 01:47:43,178 basehttp 27628 18264 "GET /admin/my_app_02/item/ HTTP/1.1" 200 12591
+INFO 2024-06-28 01:47:43,197 basehttp 27628 18264 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:47:44,334 basehttp 27628 18264 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 19975
+INFO 2024-06-28 01:47:44,347 basehttp 27628 18264 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:48:35,058 autoreload 27628 28320 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:48:35,712 autoreload 18276 23920 Watching for file changes with StatReloader
+INFO 2024-06-28 01:50:48,015 autoreload 18276 23920 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:50:48,579 autoreload 25176 28056 Watching for file changes with StatReloader
+INFO 2024-06-28 01:50:52,452 basehttp 25176 27816 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 19975
+INFO 2024-06-28 01:50:52,468 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:50:54,309 basehttp 25176 27816 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 19975
+INFO 2024-06-28 01:50:54,326 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:09,708 basehttp 25176 27816 "GET /admin/my_app_02/customer/?o= HTTP/1.1" 200 20092
+INFO 2024-06-28 01:51:09,725 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:13,247 basehttp 25176 27816 "GET /admin/my_app_02/item/ HTTP/1.1" 200 14561
+INFO 2024-06-28 01:51:13,261 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:38,049 basehttp 25176 27816 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 15917
+INFO 2024-06-28 01:51:38,067 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:40,609 basehttp 25176 27816 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15891
+INFO 2024-06-28 01:51:40,625 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:44,168 basehttp 25176 27816 "GET /admin/my_app_02/order/?_facets=True HTTP/1.1" 200 16697
+INFO 2024-06-28 01:51:44,185 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:44,287 basehttp 25176 27816 "GET /static/admin/img/icon-hidelink.svg HTTP/1.1" 200 784
+INFO 2024-06-28 01:51:46,165 basehttp 25176 27816 "GET /admin/my_app_02/order/? HTTP/1.1" 200 15891
+INFO 2024-06-28 01:51:46,182 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:49,227 basehttp 25176 27816 "GET /admin/my_app_02/order/?_facets=True HTTP/1.1" 200 16697
+INFO 2024-06-28 01:51:49,242 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:50,845 basehttp 25176 27816 "GET /admin/my_app_02/order/? HTTP/1.1" 200 15891
+INFO 2024-06-28 01:51:50,862 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:51,656 basehttp 25176 27816 "GET /admin/my_app_02/order/?_facets=True HTTP/1.1" 200 16697
+INFO 2024-06-28 01:51:51,672 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:55,123 basehttp 25176 27816 "GET /admin/my_app_02/order/? HTTP/1.1" 200 15891
+INFO 2024-06-28 01:51:55,137 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:51:57,269 basehttp 25176 27816 "GET /admin/my_app_02/order/? HTTP/1.1" 200 15891
+INFO 2024-06-28 01:51:57,282 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:52:04,456 basehttp 25176 27816 "GET /admin/my_app_02/order/?_facets=True HTTP/1.1" 200 16697
+INFO 2024-06-28 01:52:04,474 basehttp 25176 27816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:54:49,125 autoreload 25176 28056 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:54:49,813 autoreload 17940 9736 Watching for file changes with StatReloader
+INFO 2024-06-28 01:56:10,830 autoreload 17940 9736 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:56:11,441 autoreload 25908 19720 Watching for file changes with StatReloader
+INFO 2024-06-28 01:56:12,708 basehttp 25908 30116 "GET /admin/my_app_02/order/?_facets=True HTTP/1.1" 200 16697
+INFO 2024-06-28 01:56:12,724 basehttp 25908 30116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:56:14,132 basehttp 25908 30116 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
+INFO 2024-06-28 01:56:14,148 basehttp 25908 30116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:56:17,676 basehttp 25908 30116 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15088
+INFO 2024-06-28 01:56:17,692 basehttp 25908 30116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:56:27,307 basehttp 25908 30116 "GET /admin/my_app_02/item/?q=%D0%BA%D1%80%D0%BE%D0%BA%D0%BE HTTP/1.1" 200 14535
+INFO 2024-06-28 01:56:27,325 basehttp 25908 30116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:56:31,407 basehttp 25908 30116 "GET /admin/my_app_02/item/?q= HTTP/1.1" 200 15342
+INFO 2024-06-28 01:56:31,424 basehttp 25908 30116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:56:36,022 basehttp 25908 30116 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 15917
+INFO 2024-06-28 01:56:36,038 basehttp 25908 30116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 01:57:21,108 autoreload 25908 19720 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:57:21,675 autoreload 31200 11972 Watching for file changes with StatReloader
+INFO 2024-06-28 01:57:24,818 basehttp 31200 9000 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 16436
+INFO 2024-06-28 01:57:24,833 basehttp 31200 9000 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR 2024-06-28 01:57:29,825 log 31200 9000 Internal Server Error: /admin/my_app_02/orderitem/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 1985, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 864, in get_changelist_instance
+    return ChangeList(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\views\main.py", line 577, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 1187, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1472, in build_filter
+    return self._add_q(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1383, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\query.py", line 1427, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+ERROR 2024-06-28 01:57:29,829 basehttp 31200 9000 "GET /admin/my_app_02/orderitem/?q=%D1%88%D1%83%D0%B1%D0%B0 HTTP/1.1" 500 196977
+INFO 2024-06-28 01:57:37,163 basehttp 31200 9000 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 16436
+INFO 2024-06-28 01:57:56,871 autoreload 31200 11972 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 01:57:57,449 autoreload 12552 8876 Watching for file changes with StatReloader
+INFO 2024-06-28 01:57:59,897 basehttp 12552 26816 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 15917
+INFO 2024-06-28 01:57:59,913 basehttp 12552 26816 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:00:59,503 autoreload 12552 8876 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:01:00,224 autoreload 10696 22920 Watching for file changes with StatReloader
+INFO 2024-06-28 02:02:09,904 autoreload 10696 22920 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:02:10,500 autoreload 25456 30476 Watching for file changes with StatReloader
+INFO 2024-06-28 02:02:43,345 autoreload 25456 30476 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:02:43,923 autoreload 18016 26904 Watching for file changes with StatReloader
+INFO 2024-06-28 02:02:59,083 autoreload 18016 26904 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:02:59,649 autoreload 15644 28832 Watching for file changes with StatReloader
+INFO 2024-06-28 02:03:04,010 basehttp 15644 3232 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15183
+INFO 2024-06-28 02:03:04,031 basehttp 15644 3232 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR 2024-06-28 02:03:23,082 log 15644 3232 Internal Server Error: /admin/my_app_02/item/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+KeyError: 'quantity'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 2018, in changelist_view
+    response = self.response_action(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 1650, in response_action
+    response = func(self, request, queryset)
+  File "D:\STUDY\homework_01\my_project\my_app_02\admin.py", line 7, in reset_quantity
+    queryset.update(quantity=0)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\query.py", line 1228, in update
+    query.add_update_values(kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\sql\subqueries.py", line 88, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Item has no field named 'quantity'
+ERROR 2024-06-28 02:03:23,085 basehttp 15644 3232 "POST /admin/my_app_02/item/ HTTP/1.1" 500 135129
+INFO 2024-06-28 02:04:01,036 autoreload 15644 28832 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:04:01,727 autoreload 26524 18208 Watching for file changes with StatReloader
+INFO 2024-06-28 02:04:05,558 basehttp 26524 21608 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15183
+INFO 2024-06-28 02:04:09,557 basehttp 26524 21608 "POST /admin/my_app_02/item/ HTTP/1.1" 302 0
+INFO 2024-06-28 02:04:09,575 basehttp 26524 21608 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15129
+INFO 2024-06-28 02:04:09,593 basehttp 26524 21608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:04:11,801 basehttp 26524 21608 "GET /admin/my_app_02/item/4/change/ HTTP/1.1" 200 13061
+INFO 2024-06-28 02:04:11,821 basehttp 26524 21608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:04:16,406 basehttp 26524 21608 "POST /admin/my_app_02/item/4/change/ HTTP/1.1" 302 0
+INFO 2024-06-28 02:04:16,423 basehttp 26524 21608 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15420
+INFO 2024-06-28 02:04:16,441 basehttp 26524 21608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:04:18,482 basehttp 26524 21608 "GET /admin/my_app_02/item/5/change/ HTTP/1.1" 200 12889
+INFO 2024-06-28 02:04:18,498 basehttp 26524 21608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:04:22,746 basehttp 26524 21608 "POST /admin/my_app_02/item/5/change/ HTTP/1.1" 302 0
+INFO 2024-06-28 02:04:22,760 basehttp 26524 21608 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15421
+INFO 2024-06-28 02:04:22,780 basehttp 26524 21608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:11:43,369 autoreload 26524 18208 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:11:43,945 autoreload 19148 31636 Watching for file changes with StatReloader
+INFO 2024-06-28 02:11:47,929 basehttp 19148 4116 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15186
+INFO 2024-06-28 02:11:47,943 basehttp 19148 4116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:11:48,730 basehttp 19148 4116 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
+INFO 2024-06-28 02:11:48,748 basehttp 19148 4116 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR 2024-06-28 02:11:50,397 log 19148 4116 Internal Server Error: /admin/my_app_02/customer/1/change/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 837, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (pk) specified for Customer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 1948, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 1839, in _changeform_view
+    ModelForm = self.get_form(
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\options.py", line 839, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (pk) specified for Customer. Check fields/fieldsets/exclude attributes of class CustomerAdmin.
+ERROR 2024-06-28 02:11:50,399 basehttp 19148 4116 "GET /admin/my_app_02/customer/1/change/ HTTP/1.1" 500 144540
+INFO 2024-06-28 02:11:56,189 basehttp 19148 4116 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
+INFO 2024-06-28 02:12:32,013 autoreload 19148 31636 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:12:32,596 autoreload 26140 21904 Watching for file changes with StatReloader
+INFO 2024-06-28 02:12:36,064 basehttp 26140 27768 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
+INFO 2024-06-28 02:12:36,083 basehttp 26140 27768 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR 2024-06-28 02:12:37,441 log 26140 27768 Internal Server Error: /admin/my_app_02/customer/1/change/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\forms\forms.py", line 174, in __getitem__
+    field = self.fields[name]
+KeyError: 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 197, in render
+    values = list(values)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\helpers.py", line 153, in __iter__
+    yield AdminField(self.form, field, is_first=(i == 0))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\contrib\admin\helpers.py", line 167, in __init__
+    self.field = form[field]  # A django.forms.BoundField instance
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\forms\forms.py", line 176, in __getitem__
+    raise KeyError(
+KeyError: "Key 'id' not found in 'CustomerForm'. Choices are: address, customer_name, email, phone_number."
+ERROR 2024-06-28 02:12:37,445 basehttp 26140 27768 "GET /admin/my_app_02/customer/1/change/ HTTP/1.1" 500 485550
+INFO 2024-06-28 02:12:39,584 basehttp 26140 27768 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
+INFO 2024-06-28 02:13:30,933 autoreload 26140 21904 D:\STUDY\homework_01\my_project\my_app_02\admin.py changed, reloading.
+INFO 2024-06-28 02:13:31,608 autoreload 31608 27712 Watching for file changes with StatReloader
+INFO 2024-06-28 02:13:33,741 basehttp 31608 31044 "GET /admin/my_app_02/customer/1/change/ HTTP/1.1" 200 12601
+INFO 2024-06-28 02:13:33,759 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:42,491 basehttp 31608 31044 "GET /admin/my_app_02/item/ HTTP/1.1" 200 15186
+INFO 2024-06-28 02:13:42,507 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:44,125 basehttp 31608 31044 "GET /admin/my_app_02/item/4/change/ HTTP/1.1" 200 12705
+INFO 2024-06-28 02:13:44,142 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:46,160 basehttp 31608 31044 "GET /admin/my_app_02/orderitem/ HTTP/1.1" 200 15917
+INFO 2024-06-28 02:13:46,176 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:47,127 basehttp 31608 31044 "GET /admin/my_app_02/orderitem/96/change/ HTTP/1.1" 200 14237
+INFO 2024-06-28 02:13:47,144 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:50,128 basehttp 31608 31044 "GET /admin/my_app_02/order/ HTTP/1.1" 200 15891
+INFO 2024-06-28 02:13:50,146 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:51,113 basehttp 31608 31044 "GET /admin/my_app_02/order/17/change/ HTTP/1.1" 200 13230
+INFO 2024-06-28 02:13:51,128 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:13:54,180 basehttp 31608 31044 "GET /admin/my_app_02/customer/ HTTP/1.1" 200 20466
+INFO 2024-06-28 02:13:54,195 basehttp 31608 31044 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-06-28 02:30:46,727 autoreload 15136 14216 Watching for file changes with StatReloader
+INFO 2024-06-28 02:30:48,312 basehttp 15136 29692 "GET / HTTP/1.1" 200 5555
+WARNING 2024-06-28 02:30:53,870 log 15136 29692 Not Found: /my_app_02/top/
+WARNING 2024-06-28 02:30:53,870 basehttp 15136 29692 "GET /my_app_02/top/ HTTP/1.1" 404 3281
+WARNING 2024-06-28 02:30:57,288 log 15136 29692 Not Found: /my_app_02/pants/
+WARNING 2024-06-28 02:30:57,290 basehttp 15136 29692 "GET /my_app_02/pants/ HTTP/1.1" 404 3287
+WARNING 2024-06-28 02:31:00,101 log 15136 29692 Not Found: /my_app_02/shoes/
+WARNING 2024-06-28 02:31:00,102 basehttp 15136 29692 "GET /my_app_02/shoes/ HTTP/1.1" 404 3287
+WARNING 2024-06-28 02:31:02,456 log 15136 29692 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:31:02,457 basehttp 15136 29692 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+WARNING 2024-06-28 02:31:43,359 log 15136 29692 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:31:43,360 basehttp 15136 29692 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+INFO 2024-06-28 02:31:47,956 basehttp 15136 29692 "GET /my_app_02/orders/2/ HTTP/1.1" 200 3888
+INFO 2024-06-28 02:31:56,860 basehttp 15136 29692 "GET /my_app_02/orders/11/ HTTP/1.1" 200 6454
+INFO 2024-06-28 02:32:05,803 basehttp 15136 29692 "GET /my_app_02/orders/15/ HTTP/1.1" 200 3907
+INFO 2024-06-28 02:32:13,188 basehttp 15136 29692 "GET /my_app_02/orders/14/ HTTP/1.1" 200 3907
+INFO 2024-06-28 02:32:17,454 basehttp 15136 29692 "GET /my_app_02/orders/13/ HTTP/1.1" 200 4199
+INFO 2024-06-28 02:32:25,326 basehttp 15136 29692 "GET / HTTP/1.1" 200 5555
+INFO 2024-06-28 02:36:14,588 autoreload 17836 18396 Watching for file changes with StatReloader
+INFO 2024-06-28 02:36:16,210 basehttp 17836 18016 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:36:38,926 autoreload 9920 11792 Watching for file changes with StatReloader
+INFO 2024-06-28 02:36:39,949 basehttp 9920 27208 "GET / HTTP/1.1" 200 5845
+INFO 2024-06-28 02:37:48,330 autoreload 27088 27884 Watching for file changes with StatReloader
+INFO 2024-06-28 02:37:51,059 basehttp 27088 22132 "GET / HTTP/1.1" 200 5845
+INFO 2024-06-28 02:39:15,758 autoreload 23224 31608 Watching for file changes with StatReloader
+INFO 2024-06-28 02:39:26,015 basehttp 23224 14376 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:39:26,243 basehttp 23224 3696 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-28 02:39:26,247 basehttp 23224 3696 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-28 02:39:26,247 basehttp 23224 29356 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-28 02:39:26,253 basehttp 23224 29356 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-28 02:39:26,253 basehttp 23224 3696 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-28 02:39:26,258 basehttp 23224 14376 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10960
+INFO 2024-06-28 02:39:26,259 basehttp 23224 3696 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:26,265 basehttp 23224 3696 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-28 02:39:26,267 basehttp 23224 14376 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:26,275 basehttp 23224 29356 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-28 02:39:26,299 basehttp 23224 14376 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-28 02:39:26,300 basehttp 23224 29356 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-28 02:39:26,333 basehttp 23224 14376 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-28 02:39:26,334 basehttp 23224 29356 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+INFO 2024-06-28 02:39:26,349 basehttp 23224 15456 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-28 02:39:26,377 basehttp 23224 15596 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-28 02:39:26,408 basehttp 23224 24108 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+WARNING 2024-06-28 02:39:26,428 log 23224 24108 Not Found: /favicon.ico
+WARNING 2024-06-28 02:39:26,429 basehttp 23224 24108 "GET /favicon.ico HTTP/1.1" 404 2431
+INFO 2024-06-28 02:39:45,760 basehttp 23224 21616 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:39:45,772 basehttp 23224 21616 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10960
+INFO 2024-06-28 02:39:45,772 basehttp 23224 26204 "GET /static/my_app_02/images/icon_watch_video.svg HTTP/1.1" 200 392
+INFO 2024-06-28 02:39:45,774 basehttp 23224 8440 "GET /static/my_app_02/images/logo_main_1.svg HTTP/1.1" 200 71798
+INFO 2024-06-28 02:39:45,781 basehttp 23224 26204 "GET /static/my_app_02/images/logo_4.png HTTP/1.1" 200 11373
+INFO 2024-06-28 02:39:45,782 basehttp 23224 21616 "GET /static/my_app_02/images/logo_3.png HTTP/1.1" 200 24077
+INFO 2024-06-28 02:39:45,782 basehttp 23224 15376 "GET /static/my_app_02/images/logo_2.png HTTP/1.1" 200 31906
+INFO 2024-06-28 02:39:45,782 basehttp 23224 22160 "GET /static/my_app_02/images/logo_1.png HTTP/1.1" 200 20068
+INFO 2024-06-28 02:39:45,783 basehttp 23224 8440 "GET /static/my_app_02/images/logo_5.png HTTP/1.1" 200 33470
+INFO 2024-06-28 02:39:45,792 basehttp 23224 21616 "GET /static/my_app_02/images/icon_3.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:45,795 basehttp 23224 15376 "GET /static/my_app_02/images/icon_1.svg HTTP/1.1" 200 188970
+INFO 2024-06-28 02:39:45,795 basehttp 23224 26204 "GET /static/my_app_02/images/icon_2.svg HTTP/1.1" 200 188968
+INFO 2024-06-28 02:39:45,811 basehttp 23224 27528 "GET /static/my_app_02/images/top.png HTTP/1.1" 200 1724297
+INFO 2024-06-28 02:39:45,813 basehttp 23224 22160 "GET /static/my_app_02/images/about_us.png HTTP/1.1" 200 1617721
+INFO 2024-06-28 02:39:45,835 basehttp 23224 27528 "GET /static/my_app_02/fonts/gilroy-medium.woff2 HTTP/1.1" 200 26480
+INFO 2024-06-28 02:39:45,835 basehttp 23224 22160 "GET /static/my_app_02/fonts/gilroy-semibold.woff2 HTTP/1.1" 200 26280
+INFO 2024-06-28 02:39:45,880 basehttp 23224 27528 "GET /static/my_app_02/fonts/gilroy-bold.woff2 HTTP/1.1" 200 26452
+INFO 2024-06-28 02:39:45,880 basehttp 23224 22160 "GET /static/my_app_02/fonts/gilroy-regular.woff2 HTTP/1.1" 200 25164
+WARNING 2024-06-28 02:39:45,939 log 23224 27528 Not Found: /favicon.ico
+WARNING 2024-06-28 02:39:45,939 basehttp 23224 27528 "GET /favicon.ico HTTP/1.1" 404 2431
+INFO 2024-06-28 02:39:56,307 basehttp 23224 27528 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:39:56,312 basehttp 23224 27528 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:40:55,338 basehttp 23224 27528 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:40:55,343 basehttp 23224 27528 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:41:04,893 autoreload 4244 18008 Watching for file changes with StatReloader
+INFO 2024-06-28 02:41:06,455 basehttp 4244 1632 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:41:06,461 basehttp 4244 1632 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:41:12,482 basehttp 4244 1632 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:41:14,229 basehttp 4244 1632 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:41:29,874 autoreload 3700 29300 Watching for file changes with StatReloader
+INFO 2024-06-28 02:41:32,042 basehttp 3700 15064 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:41:32,048 basehttp 3700 15064 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:41:33,211 basehttp 3700 15064 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:41:37,169 basehttp 3700 15064 "GET / HTTP/1.1" 200 5843
+WARNING 2024-06-28 02:41:38,259 log 3700 15064 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:41:38,259 basehttp 3700 15064 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+INFO 2024-06-28 02:41:54,559 basehttp 3700 15064 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:41:54,564 basehttp 3700 15064 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:45:29,961 autoreload 24524 11192 Watching for file changes with StatReloader
+INFO 2024-06-28 02:45:38,140 basehttp 24524 12540 "GET /my_app_02/register/ HTTP/1.1" 200 2659
+INFO 2024-06-28 02:45:38,209 basehttp 24524 12540 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 10986
+INFO 2024-06-28 02:46:01,377 autoreload 3048 16808 Watching for file changes with StatReloader
+INFO 2024-06-28 02:46:03,487 basehttp 3048 16916 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:46:03,492 basehttp 3048 16916 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:46:54,619 autoreload 30828 14288 Watching for file changes with StatReloader
+INFO 2024-06-28 02:46:56,278 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:46:56,351 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11010
+INFO 2024-06-28 02:47:07,778 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:07,784 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11009
+INFO 2024-06-28 02:47:31,118 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:31,122 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11011
+INFO 2024-06-28 02:47:37,618 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:37,623 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11010
+INFO 2024-06-28 02:47:43,413 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:43,419 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 200 11010
+INFO 2024-06-28 02:47:49,500 basehttp 30828 15872 "GET / HTTP/1.1" 200 5843
+INFO 2024-06-28 02:47:49,504 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+WARNING 2024-06-28 02:47:51,181 log 30828 15872 Not Found: /my_app_02/top/
+WARNING 2024-06-28 02:47:51,181 basehttp 30828 15872 "GET /my_app_02/top/ HTTP/1.1" 404 3281
+WARNING 2024-06-28 02:47:53,662 log 30828 15872 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:47:53,662 basehttp 30828 15872 "GET /my_app_02/orders/ HTTP/1.1" 404 3290
+INFO 2024-06-28 02:47:56,168 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:47:56,173 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:48:11,246 basehttp 30828 15872 "GET /my_app_02/register/ HTTP/1.1" 200 2607
+INFO 2024-06-28 02:48:11,251 basehttp 30828 15872 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:50:56,944 autoreload 30828 14288 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:50:57,539 autoreload 28068 14256 Watching for file changes with StatReloader
+INFO 2024-06-28 02:51:18,866 autoreload 28068 14256 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:51:19,419 autoreload 4812 25728 Watching for file changes with StatReloader
+INFO 2024-06-28 02:51:33,493 autoreload 4812 25728 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:51:34,418 autoreload 6156 31192 Watching for file changes with StatReloader
+INFO 2024-06-28 02:52:03,365 autoreload 6156 31192 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:52:03,999 autoreload 7444 15312 Watching for file changes with StatReloader
+INFO 2024-06-28 02:53:04,799 autoreload 7444 15312 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 02:53:05,441 autoreload 16232 11972 Watching for file changes with StatReloader
+ERROR 2024-06-28 02:53:15,439 log 16232 26904 Internal Server Error: /my_app_02/register/
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\debug_toolbar\middleware.py", line 90, in __call__
+    rendered = toolbar.render_toolbar()
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\test\utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\template\defaulttags.py", line 479, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\STUDY\homework_01\.venv\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2024-06-28 02:53:15,443 basehttp 16232 26904 "GET /my_app_02/register/ HTTP/1.1" 500 137238
+INFO 2024-06-28 02:55:58,469 autoreload 16232 11972 D:\STUDY\homework_01\my_project\my_project\urls.py changed, reloading.
+INFO 2024-06-28 02:55:59,109 autoreload 16372 17796 Watching for file changes with StatReloader
+INFO 2024-06-28 02:56:05,600 basehttp 16372 17840 "GET /my_app_02/register/ HTTP/1.1" 200 16024
+INFO 2024-06-28 02:56:05,612 basehttp 16372 17840 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:56:05,613 basehttp 16372 7152 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 16630
+INFO 2024-06-28 02:56:05,613 basehttp 16372 30932 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14601
+INFO 2024-06-28 02:56:05,615 basehttp 16372 17840 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-06-28 02:56:05,618 basehttp 16372 17840 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4742
+INFO 2024-06-28 02:56:14,340 basehttp 16372 17840 "GET / HTTP/1.1" 200 19237
+INFO 2024-06-28 02:56:17,637 basehttp 16372 17840 "GET /my_app_02/register/ HTTP/1.1" 200 16024
+INFO 2024-06-28 02:56:24,499 basehttp 16372 17840 "GET / HTTP/1.1" 200 19237
+INFO 2024-06-28 02:57:44,482 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=HistoryPanel HTTP/1.1" 200 7445
+INFO 2024-06-28 02:57:44,486 basehttp 16372 17840 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-06-28 02:58:01,470 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=VersionsPanel HTTP/1.1" 200 888
+INFO 2024-06-28 02:58:15,290 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=SettingsPanel HTTP/1.1" 200 27157
+INFO 2024-06-28 02:58:30,355 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=HeadersPanel HTTP/1.1" 200 5309
+INFO 2024-06-28 02:58:56,622 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=RequestPanel HTTP/1.1" 200 1449
+INFO 2024-06-28 02:59:22,322 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=809ea48df08546d38fc3fd0470da349e&panel_id=SQLPanel HTTP/1.1" 200 428
+WARNING 2024-06-28 02:59:33,432 log 16372 17840 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 02:59:33,432 basehttp 16372 17840 "GET /my_app_02/orders/ HTTP/1.1" 404 16783
+INFO 2024-06-28 02:59:33,437 basehttp 16372 17840 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:33,438 basehttp 16372 30932 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:33,439 basehttp 16372 30932 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:33,451 basehttp 16372 30932 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:37,728 basehttp 16372 30932 "GET /my_app_02/orders/13 HTTP/1.1" 301 0
+INFO 2024-06-28 02:59:37,927 basehttp 16372 17840 "GET /my_app_02/orders/13/ HTTP/1.1" 200 17915
+INFO 2024-06-28 02:59:37,931 basehttp 16372 17840 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 02:59:41,347 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=SQLPanel HTTP/1.1" 200 62335
+INFO 2024-06-28 02:59:55,783 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=StaticFilesPanel HTTP/1.1" 200 39350
+INFO 2024-06-28 03:00:22,985 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=TemplatesPanel HTTP/1.1" 200 9919
+INFO 2024-06-28 03:00:38,228 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=CachePanel HTTP/1.1" 200 1737
+INFO 2024-06-28 03:00:43,829 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=cc1b48c77b36497c8a9ed87c0aac8ce8&panel_id=SignalsPanel HTTP/1.1" 200 2320
+INFO 2024-06-28 03:01:50,551 basehttp 16372 17840 "GET / HTTP/1.1" 200 19680
+INFO 2024-06-28 03:01:50,555 basehttp 16372 17840 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:01:53,844 basehttp 16372 17840 "GET /__debug__/render_panel/?store_id=e901785b2ca8446288d81a8be5169542&panel_id=ProfilingPanel HTTP/1.1" 200 37243
+WARNING 2024-06-28 03:21:20,088 log 16372 12868 Not Found: /my_app_02/orders/
+WARNING 2024-06-28 03:21:20,088 basehttp 16372 12868 "GET /my_app_02/orders/ HTTP/1.1" 404 17226
+INFO 2024-06-28 03:21:20,097 basehttp 16372 12868 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:20,098 basehttp 16372 28892 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:20,102 basehttp 16372 29368 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:20,108 basehttp 16372 29368 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:23,831 basehttp 16372 29368 "GET /my_app_02/orders/8 HTTP/1.1" 200 14471
+INFO 2024-06-28 03:21:23,840 basehttp 16372 28892 "GET /static/debug_toolbar/js/redirect.js HTTP/1.1" 200 48
+INFO 2024-06-28 03:21:25,604 basehttp 16372 28892 "GET /my_app_02/orders/8/ HTTP/1.1" 200 18044
+INFO 2024-06-28 03:21:25,614 basehttp 16372 28892 "GET /static/my_app_02/css/style.css HTTP/1.1" 304 0
+INFO 2024-06-28 03:21:41,984 basehttp 16372 28892 "GET /__debug__/render_panel/?store_id=4b0331450c1e40f992e00e1889f56b4f&panel_id=SQLPanel HTTP/1.1" 200 27748
+INFO 2024-06-28 03:29:37,263 autoreload 16372 17796 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:29:40,150 autoreload 28924 30704 Watching for file changes with StatReloader
+INFO 2024-06-28 03:30:02,947 autoreload 28924 30704 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:30:03,642 autoreload 3140 21172 Watching for file changes with StatReloader
+INFO 2024-06-28 03:30:41,162 autoreload 3140 21172 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:30:41,822 autoreload 29220 28252 Watching for file changes with StatReloader
+INFO 2024-06-28 03:31:15,158 autoreload 29220 28252 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:31:15,811 autoreload 10652 14436 Watching for file changes with StatReloader
+INFO 2024-06-28 03:31:40,712 autoreload 10652 14436 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:31:41,371 autoreload 7564 30304 Watching for file changes with StatReloader
+INFO 2024-06-28 03:32:00,969 autoreload 7564 30304 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:32:01,620 autoreload 1688 30768 Watching for file changes with StatReloader
+INFO 2024-06-28 03:32:08,463 autoreload 1688 30768 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:32:09,110 autoreload 31248 25172 Watching for file changes with StatReloader
+INFO 2024-06-28 03:33:50,395 autoreload 31248 25172 D:\STUDY\homework_01\my_project\my_project\settings.py changed, reloading.
+INFO 2024-06-28 03:33:51,067 autoreload 384 17920 Watching for file changes with StatReloader

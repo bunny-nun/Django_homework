@@ -1,5 +1,6 @@
 from django import forms
 from phonenumber_field.formfields import PhoneNumberField
+from django.core.validators import MinValueValidator
 
 
 class CustomerForm(forms.Form):
@@ -34,6 +35,9 @@ class ItemForm(forms.Form):
                    'placeholder': 'Описание'}), label='')
     item_price = forms.DecimalField(
         max_digits=8, decimal_places=2,
+        validators=[MinValueValidator(0.01,
+                                      message='Цена товара должна быть '
+                                              'положительной')],
         widget=forms.TextInput(attrs={'class': 'form-control placeholder',
                                       'placeholder': 'Цена'}), label='')
     item_quantity = forms.IntegerField(widget=forms.TextInput(
@@ -42,3 +46,4 @@ class ItemForm(forms.Form):
         label='')
     item_image = forms.ImageField(widget=forms.FileInput(
         attrs={'class': 'form-control placeholder'}))
+
